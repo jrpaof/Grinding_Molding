@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GRINDING&amp;MOLDING</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/AnimatePageChange.css">
+    <link rel="stylesheet" href="assets/css/glowAnimation.css">
+    <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/moduleSelect.css">
+    <link rel="stylesheet" href="assets/css/ScrollBar.css">
+    <link rel="stylesheet" href="assets/css/SidePanel.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="sidehide sidepanel rounded shadow" id="sidepanel"><button class="btn btn-link float-right p-0 closebtn" type="button" onclick="closeNav()"><i class="fa fa-close"></i></button>
+            <h6 class="m-3">Navigation</h6>
+            <div class="container"><a class="mb-1" href="moduleSelect.html"><i class="fa fa-home mr-2"></i>Home</a><span class="font-weight-bold text-black-50">----------&nbsp; Grinding&nbsp; -----------</span><a class="mb-1" href="dash_grinding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_grindingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_grindingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_grindingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; Molding&nbsp; ----------</span><a class="mb-1" href="dash_molding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_moldingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_moldingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_moldingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; PM ----------</span><a class="mb-1" href="pm_pmmachinedashboard.html"><i class="fa fa-shield mr-2"></i>PM Machine</a><a class="mb-1" href="pm_moldingdashboard.html"><i class="fa fa-shield mr-2"></i>PM Molding</a></div>
+            <div class="container"><span class="text-black-50">User :</span><a class="mb-1"><i class="fa fa-sign-out mr-2"></i>Logout</a></div>
+        </div>
+        <div id="content-wrapper">
+            <nav class="navbar navbar-light navbar-expand-md pageHeader">
+                <div class="container-fluid"><button class="btn btn-primary float-left m-0 openbtn" type="button" onclick="openNav()"><i class="fa fa-navicon text-light"></i></button><a class="navbar-brand font-weight-bold text-light" href="#">Process : molding</a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span>
+                    <div class="d-flex align-items-center"><a class="btn btn-primary mx-2" role="button" href="dash_menu.html"><i class="fa fa-backward text-light"></i></a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span></div>
+                </div>
+            </nav>
+            <div id="content" class="animate-in">
+                <div class="container-fluid py-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card mb-3 moldingCard">
+                                <div class="card-body">
+                                    <h4 class="font-weight-bold card-title">Overall Status</h4>
+                                    <div class="row">
+                                        <div class="col text-right"><span style="font-size: 1.25rem;">Working time :</span></div>
+                                        <div class="col text-left"><span style="font-size: 1.25rem;">250 mins</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-right"><span style="font-size: 1.25rem;">Downtime :</span></div>
+                                        <div class="col text-left"><span style="font-size: 1.25rem;">50 mins</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-right"><span style="font-size: 1.25rem;">Output Count :</span></div>
+                                        <div class="col text-left"><span style="font-size: 1.25rem;">1254 pcs</span></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col text-right"><span style="font-size: 1.25rem;">NG Count :</span></div>
+                                        <div class="col text-left"><span style="font-size: 1.25rem;">10 pcs</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-responsive table-autoscroll overflow-auto" style="height: 760px;">
+                                <table class="table table-borderless">
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-1">
+                                                <div class="card mb-2 color-run statusbox">
+                                                    <div class="card-body">
+                                                        <div class="row my-3 px-5">
+                                                            <div class="col-auto d-xl-flex justify-content-xl-center align-items-xl-center">
+                                                                <h4 class="font-weight-bold">molding 1</h4>
+                                                            </div>
+                                                            <div class="col text-center"><span style="font-size: 1.5rem;">Running</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">
+                                                <div class="card mb-2 color-noplan statusbox">
+                                                    <div class="card-body">
+                                                        <div class="row my-3 px-5">
+                                                            <div class="col-auto d-xl-flex justify-content-xl-center align-items-xl-center">
+                                                                <h4 class="font-weight-bold">molding 2</h4>
+                                                            </div>
+                                                            <div class="col text-center"><span style="font-size: 1.5rem;">No Plan</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">
+                                                <div class="card mb-2 color-downtime statusbox">
+                                                    <div class="card-body">
+                                                        <div class="row my-3 px-5">
+                                                            <div class="col-auto d-xl-flex justify-content-xl-center align-items-xl-center">
+                                                                <h4 class="font-weight-bold">molding 3</h4>
+                                                            </div>
+                                                            <div class="col text-center"><span style="font-size: 1.5rem;">Process Downtime</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">
+                                                <div class="card mb-2 color-mcdowntime statusbox">
+                                                    <div class="card-body">
+                                                        <div class="row my-3 px-5">
+                                                            <div class="col-auto d-xl-flex justify-content-xl-center align-items-xl-center">
+                                                                <h4 class="font-weight-bold">molding 4</h4>
+                                                            </div>
+                                                            <div class="col text-center"><span style="font-size: 1.5rem;">Machine Downtime</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">
+                                                <div class="card mb-2 color-run statusbox">
+                                                    <div class="card-body">
+                                                        <div class="row my-3 px-5">
+                                                            <div class="col-auto d-xl-flex justify-content-xl-center align-items-xl-center">
+                                                                <h4 class="font-weight-bold">molding 5</h4>
+                                                            </div>
+                                                            <div class="col text-center"><span style="font-size: 1.5rem;">Run</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">
+                                                <div class="card mb-2 color-run statusbox">
+                                                    <div class="card-body">
+                                                        <div class="row my-3 px-5">
+                                                            <div class="col-auto d-xl-flex justify-content-xl-center align-items-xl-center">
+                                                                <h4 class="font-weight-bold">molding 6</h4>
+                                                            </div>
+                                                            <div class="col text-center"><span style="font-size: 1.5rem;">Running</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">
+                                                <div class="card mb-2 color-noplan statusbox">
+                                                    <div class="card-body">
+                                                        <div class="row my-3 px-5">
+                                                            <div class="col-auto d-xl-flex justify-content-xl-center align-items-xl-center">
+                                                                <h4 class="font-weight-bold">molding 7</h4>
+                                                            </div>
+                                                            <div class="col text-center"><span style="font-size: 1.5rem;">No Plan</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">
+                                                <div class="card mb-2 color-downtime statusbox">
+                                                    <div class="card-body">
+                                                        <div class="row my-3 px-5">
+                                                            <div class="col-auto d-xl-flex justify-content-xl-center align-items-xl-center">
+                                                                <h4 class="font-weight-bold">molding 8</h4>
+                                                            </div>
+                                                            <div class="col text-center"><span style="font-size: 1.5rem;">Process Downtime</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">
+                                                <div class="card mb-2 color-mcdowntime statusbox">
+                                                    <div class="card-body">
+                                                        <div class="row my-3 px-5">
+                                                            <div class="col-auto d-xl-flex justify-content-xl-center align-items-xl-center">
+                                                                <h4 class="font-weight-bold">molding 9</h4>
+                                                            </div>
+                                                            <div class="col text-center"><span style="font-size: 1.5rem;">Machine Downtime</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-1">
+                                                <div class="card mb-2 color-run statusbox">
+                                                    <div class="card-body">
+                                                        <div class="row my-3 px-5">
+                                                            <div class="col-auto d-xl-flex justify-content-xl-center align-items-xl-center">
+                                                                <h4 class="font-weight-bold">molding 10</h4>
+                                                            </div>
+                                                            <div class="col text-center"><span style="font-size: 1.5rem;">Run</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col align-self-center">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card mb-3 moldingCard" style="height: 280px;">
+                                                <div class="card-body">
+                                                    <h3 class="font-weight-bold card-title">Productivity</h3>
+                                                    <div class="row my-3">
+                                                        <div class="col d-flex justify-content-center align-items-center">
+                                                            <div></div><img src="assets/img/thermostat.svg">
+                                                        </div>
+                                                        <div class="col align-self-center">
+                                                            <p style="font-size: 1.25rem;">Standard: 256 m.</p>
+                                                            <p style="font-size: 1.25rem;">Working Time : 250 m.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card mb-3 moldingCard" style="height: 280px;">
+                                                <div class="card-body">
+                                                    <h3 class="font-weight-bold card-title">Utillize of Machine</h3>
+                                                    <div class="row my-3">
+                                                        <div class="col d-flex justify-content-center align-items-center">
+                                                            <div></div><img src="assets/img/thermostat.svg">
+                                                        </div>
+                                                        <div class="col align-self-center">
+                                                            <p style="font-size: 1.25rem;">Working Time : 250 m.</p>
+                                                            <p style="font-size: 1.25rem;">Downtime : 50 m.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mb-3 moldingCard" style="height: 575px;">
+                                        <div class="card-body">
+                                            <h3 class="font-weight-bold card-title">Overall Efficiency Effectiveness</h3>
+                                            <div class="row my-3">
+                                                <div class="col d-flex justify-content-center align-items-center">
+                                                    <div><span class="font-weight-bold" style="font-size: 3rem;top: 38%;left: 45%;position: absolute;">80%</span></div><img src="assets/img/Light-%20Progress%20Indicators-2.png" width="279" height="289">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col text-center align-self-center">
+                                                    <p class="font-weight-bold" style="font-size: 2rem;">Availability : 95</p>
+                                                    <p class="font-weight-bold" style="font-size: 2rem;">Performance : 95</p>
+                                                    <p class="font-weight-bold" style="font-size: 2rem;">Quality : 95</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card mb-3 shadow moldingCard" style="height: 300px;">
+                                        <div class="card-body">
+                                            <h2 class="font-weight-bold text-dark card-title mb-3">Defect Rate</h2>
+                                            <div class="row my-3 px-1" style="height: 80%;">
+                                                <div class="col-8">
+                                                    <div style="height: 90%;"><canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;,&quot;10&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Defect rate&quot;,&quot;backgroundColor&quot;:&quot;#c54f4f&quot;,&quot;borderColor&quot;:&quot;#ffffff&quot;,&quot;data&quot;:[&quot;30&quot;,&quot;20&quot;,&quot;28&quot;,&quot;21&quot;,&quot;31&quot;,&quot;24&quot;,&quot;28&quot;,&quot;20&quot;,&quot;34&quot;,&quot;16&quot;],&quot;fill&quot;:true}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;bold&quot;,&quot;fontColor&quot;:&quot;#452054&quot;,&quot;display&quot;:true,&quot;text&quot;:&quot;% Rate&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#452054&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;beginAtZero&quot;:true}}],&quot;yAxes&quot;:[{&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#452054&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;beginAtZero&quot;:true}}]}}}"></canvas></div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div style="height: 90%;"><canvas data-bss-chart="{&quot;type&quot;:&quot;horizontalBar&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;No.1&quot;,&quot;No.2&quot;,&quot;No.3&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Defect%&quot;,&quot;backgroundColor&quot;:&quot;#95a6ff&quot;,&quot;borderColor&quot;:&quot;#df6c6c&quot;,&quot;borderWidth&quot;:&quot;&quot;,&quot;data&quot;:[&quot;15&quot;,&quot;5&quot;,&quot;2&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;bold&quot;,&quot;display&quot;:true,&quot;text&quot;:&quot;Top 3&quot;,&quot;fontColor&quot;:&quot;#452054&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgba(26,101,214,0.1)&quot;,&quot;zeroLineColor&quot;:&quot;rgba(26,101,214,0.1)&quot;,&quot;drawBorder&quot;:true,&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#452054&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;beginAtZero&quot;:true}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgba(26,101,214,0.1)&quot;,&quot;zeroLineColor&quot;:&quot;rgba(26,101,214,0.1)&quot;,&quot;drawBorder&quot;:true,&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#452054&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;beginAtZero&quot;:true}}]}}}"></canvas></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mb-3 shadow moldingCard" style="height: 300px;">
+                                        <div class="card-body">
+                                            <h2 class="font-weight-bold text-dark card-title mb-3">Downtime</h2>
+                                            <div class="row my-3 px-1" style="height: 80%;">
+                                                <div class="col-8">
+                                                    <div style="height: 90%;"><canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;,&quot;10&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Defect rate&quot;,&quot;backgroundColor&quot;:&quot;#dfb16c&quot;,&quot;borderColor&quot;:&quot;#ffffff&quot;,&quot;data&quot;:[&quot;30&quot;,&quot;20&quot;,&quot;28&quot;,&quot;21&quot;,&quot;31&quot;,&quot;24&quot;,&quot;28&quot;,&quot;20&quot;,&quot;34&quot;,&quot;16&quot;],&quot;fill&quot;:true}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;bold&quot;,&quot;fontColor&quot;:&quot;#452054&quot;,&quot;display&quot;:true,&quot;text&quot;:&quot;% Rate&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#452054&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;beginAtZero&quot;:true}}],&quot;yAxes&quot;:[{&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#452054&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;beginAtZero&quot;:true}}]}}}"></canvas></div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div style="height: 90%;"><canvas data-bss-chart="{&quot;type&quot;:&quot;horizontalBar&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;No.1&quot;,&quot;No.2&quot;,&quot;No.3&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Defect%&quot;,&quot;backgroundColor&quot;:&quot;#9ed6c5&quot;,&quot;borderColor&quot;:&quot;#df6c6c&quot;,&quot;borderWidth&quot;:&quot;&quot;,&quot;data&quot;:[&quot;15&quot;,&quot;5&quot;,&quot;2&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;bold&quot;,&quot;display&quot;:true,&quot;text&quot;:&quot;Top 3&quot;,&quot;fontColor&quot;:&quot;#452054&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;drawBorder&quot;:true,&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#452054&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;beginAtZero&quot;:true}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;drawBorder&quot;:true,&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#452054&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;beginAtZero&quot;:true}}]}}}"></canvas></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card mb-3 shadow moldingCard" style="height: 300px;">
+                                        <div class="card-body">
+                                            <h2 class="font-weight-bold text-dark card-title mb-3">Machine Downtime</h2>
+                                            <div class="row my-3 px-1" style="height: 80%;">
+                                                <div class="col-8">
+                                                    <div style="height: 90%;"><canvas data-bss-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;,&quot;10&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Defect rate&quot;,&quot;backgroundColor&quot;:&quot;#df6c6c&quot;,&quot;borderColor&quot;:&quot;#ffffff&quot;,&quot;data&quot;:[&quot;30&quot;,&quot;20&quot;,&quot;28&quot;,&quot;21&quot;,&quot;31&quot;,&quot;24&quot;,&quot;28&quot;,&quot;20&quot;,&quot;34&quot;,&quot;16&quot;],&quot;fill&quot;:true}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;bold&quot;,&quot;fontColor&quot;:&quot;#452054&quot;,&quot;display&quot;:true,&quot;text&quot;:&quot;% Rate&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#452054&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;beginAtZero&quot;:true}}],&quot;yAxes&quot;:[{&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#452054&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;beginAtZero&quot;:true}}]}}}"></canvas></div>
+                                                </div>
+                                                <div class="col-4">
+                                                    <div style="height: 90%;"><canvas data-bss-chart="{&quot;type&quot;:&quot;horizontalBar&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;No.1&quot;,&quot;No.2&quot;,&quot;No.3&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Defect%&quot;,&quot;backgroundColor&quot;:&quot;#dfc46c&quot;,&quot;borderColor&quot;:&quot;#df6c6c&quot;,&quot;borderWidth&quot;:&quot;&quot;,&quot;data&quot;:[&quot;15&quot;,&quot;5&quot;,&quot;2&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;bold&quot;,&quot;display&quot;:true,&quot;text&quot;:&quot;Top 3&quot;,&quot;fontColor&quot;:&quot;#452054&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;drawBorder&quot;:true,&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#452054&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;beginAtZero&quot;:true}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;drawBorder&quot;:true,&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#452054&quot;,&quot;fontStyle&quot;:&quot;normal&quot;,&quot;beginAtZero&quot;:true}}]}}}"></canvas></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/reportselect.js"></script>
+    <script src="assets/js/SidePanel.js"></script>
+    <script src="assets/js/tablescroll.js"></script>
+</body>
+
+</html>

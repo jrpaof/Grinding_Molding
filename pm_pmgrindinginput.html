@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GRINDING&amp;MOLDING</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/AnimatePageChange.css">
+    <link rel="stylesheet" href="assets/css/glowAnimation.css">
+    <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/moduleSelect.css">
+    <link rel="stylesheet" href="assets/css/ScrollBar.css">
+    <link rel="stylesheet" href="assets/css/SidePanel.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="sidehide sidepanel rounded shadow" id="sidepanel"><button class="btn btn-link float-right p-0 closebtn" type="button" onclick="closeNav()"><i class="fa fa-close"></i></button>
+            <h6 class="m-3">Navigation</h6>
+            <div class="container"><a class="mb-1" href="moduleSelect.html"><i class="fa fa-home mr-2"></i>Home</a><span class="font-weight-bold text-black-50">----------&nbsp; Grinding&nbsp; -----------</span><a class="mb-1" href="dash_grinding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_grindingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_grindingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_grindingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; Molding&nbsp; ----------</span><a class="mb-1" href="dash_molding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_moldingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_moldingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_moldingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; PM ----------</span><a class="mb-1" href="pm_pmmachinedashboard.html"><i class="fa fa-shield mr-2"></i>PM Machine</a><a class="mb-1" href="pm_moldingdashboard.html"><i class="fa fa-shield mr-2"></i>PM Molding</a></div>
+            <div class="container"><span class="text-black-50">User :</span><a class="mb-1"><i class="fa fa-sign-out mr-2"></i>Logout</a></div>
+        </div>
+        <div id="content-wrapper">
+            <nav class="navbar navbar-light navbar-expand-md pageHeader">
+                <div class="container-fluid"><button class="btn btn-primary float-left m-0 openbtn" type="button" onclick="openNav()"><i class="fa fa-navicon text-light"></i></button><a class="navbar-brand font-weight-bold text-light" href="#"></a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span>
+                    <div class="d-flex align-items-center"><a class="btn btn-primary mx-2" role="button" href="pm_pmmachinedashboard.html"><i class="fa fa-backward text-light"></i></a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span></div>
+                </div>
+            </nav>
+            <div id="content" class="animate-in">
+                <div class="container-fluid py-3">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <div class="card mb-3 shadow grindingCard">
+                                <div class="card-body text-center">
+                                    <h4 class="text-white">PM Machine Input</h4>
+                                    <div class="row justify-content-center">
+                                        <div class="col-2"><em>Machine No:</em><input class="form-control-sm form-control mb-2" type="text" value="Grinding 1" readonly="" style="text-align: center;"></div>
+                                        <div class="col-2 col-xl-2"><em>Department:</em><input class="form-control-sm form-control mb-2" type="text" value="-" readonly="" style="text-align: center;"></div>
+                                        <div class="col-2"><em>Responsible:</em><input class="form-control-sm form-control mb-2" type="text" value="name" readonly="" style="text-align: center;"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="table-responsive" style="font-size: .75rem;">
+                                                <table class="table table-hover table-dark table-bordered table-sm">
+                                                    <tbody>
+                                                        <tr class="bg-primary">
+                                                            <td rowspan="3">Item No.</td>
+                                                            <td rowspan="3">Detail</td>
+                                                            <td rowspan="3">Frequency</td>
+                                                            <td colspan="24">Year&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg-secondary" colspan="2">Jan</td>
+                                                            <td class="bg-secondary" colspan="2">Feb</td>
+                                                            <td class="bg-secondary" colspan="2">Mar</td>
+                                                            <td class="bg-secondary" colspan="2">Apr</td>
+                                                            <td class="bg-secondary" colspan="2">May</td>
+                                                            <td class="bg-secondary" colspan="2">Jun</td>
+                                                            <td class="bg-secondary" colspan="2">July</td>
+                                                            <td class="bg-secondary" colspan="2">Aug</td>
+                                                            <td class="bg-secondary" colspan="2">Sep</td>
+                                                            <td class="bg-secondary" colspan="2">Oct</td>
+                                                            <td class="bg-secondary" colspan="2">Nov</td>
+                                                            <td class="bg-secondary" colspan="2">Dec</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="bg-warning">Plan</td>
+                                                            <td class="bg-info">Actual</td>
+                                                            <td class="bg-warning">Plan</td>
+                                                            <td class="bg-info">Actual</td>
+                                                            <td class="bg-warning">Plan</td>
+                                                            <td class="bg-info">Actual</td>
+                                                            <td class="bg-warning">Plan</td>
+                                                            <td class="bg-info">Actual</td>
+                                                            <td class="bg-warning">Plan</td>
+                                                            <td class="bg-info">Actual</td>
+                                                            <td class="bg-warning">Plan</td>
+                                                            <td class="bg-info">Actual</td>
+                                                            <td class="bg-warning">Plan</td>
+                                                            <td class="bg-info">Actual</td>
+                                                            <td class="bg-warning">Plan</td>
+                                                            <td class="bg-info">Actual</td>
+                                                            <td class="bg-warning">Plan</td>
+                                                            <td class="bg-info">Actual</td>
+                                                            <td class="bg-warning">Plan</td>
+                                                            <td class="bg-info">Actual</td>
+                                                            <td class="bg-warning">Plan</td>
+                                                            <td class="bg-info">Actual</td>
+                                                            <td class="bg-warning">Plan</td>
+                                                            <td class="bg-info">Actual</td>
+                                                        </tr>
+                                                        <tr class="bg-light text-dark" role="button" href="">
+                                                            <td>1</td>
+                                                            <td>-</td>
+                                                            <td>-</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+                                                        <tr class="bg-light text-dark">
+                                                            <td>2</td>
+                                                            <td>-<br></td>
+                                                            <td>-<br></td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+                                                        <tr class="bg-light text-dark">
+                                                            <td>3</td>
+                                                            <td>-<br></td>
+                                                            <td>-<br></td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+                                                        <tr class="bg-light text-dark">
+                                                            <td>4</td>
+                                                            <td>-<br></td>
+                                                            <td>-<br></td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+                                                    </tbody>
+                                                    <tfoot>
+                                                        <tr class="bg-secondary">
+                                                            <td>Total</td>
+                                                            <td>Total</td>
+                                                            <td>Total</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                            <td>0</td>
+                                                        </tr>
+                                                    </tfoot>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="table-responsive">
+                                                <table class="table table-dark table-bordered table-sm">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>ประจำเดือน</th>
+                                                            <th>ปัญหา</th>
+                                                            <th>สาเหตุ</th>
+                                                            <th>การแก้ไข</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>A</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>B</td>
+                                                            <td></td>
+                                                            <td></td>
+                                                            <td></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <form>
+                                                <div class="form-row">
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <div class="form-row align-items-center">
+                                                                <div class="col-auto text-right"><span class="text-light">ประจำเดือน:</span></div>
+                                                                <div class="col"><input class="form-control" type="text"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <div class="form-row align-items-center">
+                                                                <div class="col-auto text-right"><span class="text-light">ปัญหา:</span></div>
+                                                                <div class="col"><input class="form-control" type="text"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <div class="form-row align-items-center">
+                                                                <div class="col-auto text-right"><span class="text-light">สาเหตุ:</span></div>
+                                                                <div class="col"><input class="form-control" type="text"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="form-group">
+                                                            <div class="form-row align-items-center">
+                                                                <div class="col-auto text-right"><span class="text-light">การแก้ไข:</span></div>
+                                                                <div class="col"><input class="form-control" type="text"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col"><button class="btn btn-primary mx-3" type="button" style="width: 5rem;">Add</button><button class="btn btn-success mx-3" type="button" style="width: 5rem;">Save</button><button class="btn btn-danger mx-3" type="button" style="width: 5rem;">Delete</button></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/reportselect.js"></script>
+    <script src="assets/js/SidePanel.js"></script>
+    <script src="assets/js/tablescroll.js"></script>
+</body>
+
+</html>

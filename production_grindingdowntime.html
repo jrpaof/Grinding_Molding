@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>SDMT-GRINDING&amp;MOLDING_V00</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/AnimatePageChange.css">
+    <link rel="stylesheet" href="assets/css/glowAnimation.css">
+    <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/moduleSelect.css">
+    <link rel="stylesheet" href="assets/css/ScrollBar.css">
+    <link rel="stylesheet" href="assets/css/SidePanel.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="sidehide sidepanel rounded shadow" id="sidepanel"><button class="btn btn-link float-right p-0 closebtn" type="button" onclick="closeNav()"><i class="fa fa-close"></i></button>
+            <h6 class="m-3">Navigation</h6>
+            <div class="container"><a class="mb-1" href="moduleSelect.html"><i class="fa fa-home mr-2"></i>Home</a><span class="font-weight-bold text-black-50">----------&nbsp; Grinding&nbsp; -----------</span><a class="mb-1" href="dash_grinding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_grindingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_grindingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_grindingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; Molding&nbsp; ----------</span><a class="mb-1" href="dash_molding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_moldingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_moldingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_moldingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; PM ----------</span><a class="mb-1" href="pm_pmmachinedashboard.html"><i class="fa fa-shield mr-2"></i>PM Machine</a><a class="mb-1" href="pm_moldingdashboard.html"><i class="fa fa-shield mr-2"></i>PM Molding</a></div>
+            <div class="container"><span class="text-black-50">User :</span><a class="mb-1"><i class="fa fa-sign-out mr-2"></i>Logout</a></div>
+        </div>
+        <div id="content-wrapper">
+            <nav class="navbar navbar-light navbar-expand-md pageHeader">
+                <div class="container-fluid"><button class="btn btn-primary float-left m-0 openbtn" type="button" onclick="openNav()"><i class="fa fa-navicon text-light"></i></button><a class="navbar-brand font-weight-bold text-light" href="#">Production : Grinding 1</a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span>
+                    <div class="d-flex align-items-center"><a class="btn btn-primary mx-2" role="button" href="production_grindingplan.html"><i class="fa fa-backward text-light"></i></a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span></div>
+                </div>
+            </nav>
+            <div id="content" class="animate-in">
+                <div class="container-fluid py-3">
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <h1 class="font-weight-bold text-center">Grinding 1</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="font-weight-bold text-left">Downtime Shift Select</h4>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <div class="card d-flex grindingCard-second mb-3">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h4 class="font-weight-bold text-left">Production Date</h4>
+                                                </div>
+                                                <div class="col"><input class="form-control mb-3" type="date"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col text-center">
+                                    <div class="card d-flex grindingCard-second mb-3">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h4 class="font-weight-bold text-left">Shift</h4>
+                                                </div>
+                                                <div class="col"><select class="form-control mb-3">
+                                                        <option value="" selected="">Day</option>
+                                                        <option value="13">Night</option>
+                                                    </select></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col text-center">
+                                    <div class="card grindingCard-second mb-3">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h4 class="font-weight-bold text-left">Downtime Total</h4>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="lead font-weight-bold text-center" style="font-size: 1.75rem;">25 mins</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow grindingCard">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-auto align-self-center">
+                                            <h4 class="font-weight-bold text-left">Downtime List</h4>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="table-responsive grindingTable-light productiontable" style="height: 680px;">
+                                                <table class="table table-hover table-borderless">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Select</th>
+                                                            <th>Time Start<br>เวลาเริ่ม</th>
+                                                            <th>Time End<br>เวลาจบ</th>
+                                                            <th>Total Time(m)<br>เวลารวม</th>
+                                                            <th>Downtime Case<br>สาเหตุการหยุด</th>
+                                                            <th>Downtime Type<br>ชนิดการหยุด</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="text-center"><input type="checkbox" style="width: 1.5rem;height: 1.5rem;"></td>
+                                                            <td>8:00</td>
+                                                            <td>8:30</td>
+                                                            <td>30</td>
+                                                            <td>Downtime case 1</td>
+                                                            <td>Process Downtime</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><input type="checkbox" style="width: 1.5rem;height: 1.5rem;"></td>
+                                                            <td>10:00</td>
+                                                            <td>10:15</td>
+                                                            <td>15</td>
+                                                            <td>Downtime case 2</td>
+                                                            <td>Machine Downtime</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td class="text-center"><input type="checkbox" style="width: 1.5rem;height: 1.5rem;"></td>
+                                                            <td>11:00</td>
+                                                            <td>11:15</td>
+                                                            <td>15</td>
+                                                            <td>No Case</td>
+                                                            <td>Process Downtime</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="card grindingCard-second">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-auto align-self-center"><strong class="text-dark" style="font-size: 1.5rem;">Downtime Detail/รายละเอียดการหยุด</strong></div>
+                                                    </div>
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="col"><strong class="mt-2" style="font-size: 1.25rem;">1 item(s) selected</strong></div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="form-group"><span class="text-dark">Total time<br>เวลารวม<br></span>
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-prepend"></div><input class="form-control" type="text" readonly="">
+                                                                        <div class="input-group-append"><span class="text-dark input-group-text">m.</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col-auto align-self-center"><strong class="text-dark" style="font-size: 1.5rem;">Case Select/ เลือกสาเหตุการหยุด</strong></div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <form class="p-2">
+                                                                    <div class="form-row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <div class="form-row">
+                                                                                    <div class="col"><span class="text-dark">Downtime type/ ชนิดการหยุดเครื่อง<br></span><select class="form-control">
+                                                                                            <option value="" selected="">Process Downtime</option>
+                                                                                            <option value="">Machine Downtime</option>
+                                                                                        </select></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="col">
+                                                                            <div class="form-group">
+                                                                                <div class="form-row">
+                                                                                    <div class="col"><span class="text-dark">Downtime case/ สาเหตุการหยุดเครื่อง<br></span><select class="form-control">
+                                                                                            <option value="" selected="">Downtime Case 1</option>
+                                                                                            <option value="">Downtime Case 2</option>
+                                                                                            <option value="">Downtime Case 3</option>
+                                                                                        </select></div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="form-row">
+                                                                                <div class="col text-right"><button class="btn btn-success mb-3 mx-2" type="button">save/ บันทึก</button></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/reportselect.js"></script>
+    <script src="assets/js/SidePanel.js"></script>
+    <script src="assets/js/tablescroll.js"></script>
+</body>
+
+</html>

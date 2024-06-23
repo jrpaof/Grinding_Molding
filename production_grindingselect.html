@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GRINDING&amp;MOLDING</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/AnimatePageChange.css">
+    <link rel="stylesheet" href="assets/css/glowAnimation.css">
+    <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/moduleSelect.css">
+    <link rel="stylesheet" href="assets/css/ScrollBar.css">
+    <link rel="stylesheet" href="assets/css/SidePanel.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="sidehide sidepanel rounded shadow" id="sidepanel"><button class="btn btn-link float-right p-0 closebtn" type="button" onclick="closeNav()"><i class="fa fa-close"></i></button>
+            <h6 class="m-3">Navigation</h6>
+            <div class="container"><a class="mb-1" href="moduleSelect.html"><i class="fa fa-home mr-2"></i>Home</a><span class="font-weight-bold text-black-50">----------&nbsp; Grinding&nbsp; -----------</span><a class="mb-1" href="dash_grinding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_grindingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_grindingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_grindingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; Molding&nbsp; ----------</span><a class="mb-1" href="dash_molding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_moldingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_moldingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_moldingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; PM ----------</span><a class="mb-1" href="pm_pmmachinedashboard.html"><i class="fa fa-shield mr-2"></i>PM Machine</a><a class="mb-1" href="pm_moldingdashboard.html"><i class="fa fa-shield mr-2"></i>PM Molding</a></div>
+            <div class="container"><span class="text-black-50">User :</span><a class="mb-1"><i class="fa fa-sign-out mr-2"></i>Logout</a></div>
+        </div>
+        <div id="content-wrapper">
+            <nav class="navbar navbar-light navbar-expand-md pageHeader">
+                <div class="container-fluid"><button class="btn btn-primary float-left m-0 openbtn" type="button" onclick="openNav()"><i class="fa fa-navicon text-light"></i></button><a class="navbar-brand font-weight-bold text-light" href="#">Production: Grinding</a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span>
+                    <div class="d-flex align-items-center"><a class="btn btn-primary mx-2" role="button" href="production_menu.html"><i class="fa fa-backward text-light"></i></a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span></div>
+                </div>
+            </nav>
+            <div id="content" class="animate-in">
+                <div class="container-fluid py-3">
+                    <div class="row small font-weight-bold">
+                        <div class="col-auto"><a href="production_grindingplan.html">
+                                <div class="card grindingStatus mb-1" style="width: 350px;">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold text-center card-title">Grinding 1</h4>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col"><em>Total Output/Day</em>
+                                                        <div class="databox"><span>3600</span></div>
+                                                    </div>
+                                                </div>
+                                                <h6 class="font-weight-bold">Now production&nbsp;</h6>
+                                                <div class="row">
+                                                    <div class="col"><em>Model</em>
+                                                        <div class="databox"><span>-</span></div>
+                                                    </div>
+                                                    <div class="col"><em>Type</em>
+                                                        <div class="databox"><span>Final</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"><em>Lot no.</em>
+                                                        <div class="databox"><span>-</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col text-center"><em>Current Status</em>
+                                                <div class="row">
+                                                    <div class="col d-xl-flex justify-content-xl-center">
+                                                        <div class="statuslamp color-run"><span>Running</span></div>
+                                                    </div>
+                                                </div><em>Productivity</em>
+                                                <div class="row">
+                                                    <div class="col-xl-12 text-center"><img src="assets/img/thermostat.svg" width="109" height="86"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><em>Timeline</em>
+                                                <div class="progress mb-2">
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-secondary" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+                                                </div><img class="w-100 pb-2 border-bottom" src="assets/img/timescale_light.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card grindingStatus mb-3" style="width: 350px;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col"><em>Next Model</em>
+                                                <div class="databox mb-0"><span>-</span></div>
+                                            </div>
+                                            <div class="col"><em>Next Type</em>
+                                                <div class="databox mb-0"><span>Final</span></div>
+                                            </div>
+                                            <div class="col"><em>&nbsp;Next Lot</em>
+                                                <div class="databox mb-0"><span>-</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                        <div class="col-auto"><a href="production_grindingplan.html">
+                                <div class="card grindingStatus mb-1" style="width: 350px;">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold text-center card-title">Grinding 2</h4>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col"><em>Total Output/Day</em>
+                                                        <div class="databox"><span>3600</span></div>
+                                                    </div>
+                                                </div>
+                                                <h6 class="font-weight-bold">Now production&nbsp;</h6>
+                                                <div class="row">
+                                                    <div class="col"><em>Model</em>
+                                                        <div class="databox"><span>-</span></div>
+                                                    </div>
+                                                    <div class="col"><em>Type</em>
+                                                        <div class="databox"><span>Final</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"><em>Lot no.</em>
+                                                        <div class="databox"><span>-</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col text-center"><em>Current Status</em>
+                                                <div class="row">
+                                                    <div class="col d-xl-flex justify-content-xl-center">
+                                                        <div class="statuslamp color-downtime"><span>Process<br>Downtime</span></div>
+                                                    </div>
+                                                </div><em>Productivity</em>
+                                                <div class="row">
+                                                    <div class="col-xl-12 text-center"><img src="assets/img/thermostat.svg" width="109" height="86"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><em>Timeline</em>
+                                                <div class="progress mb-2">
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-secondary" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+                                                </div><img class="w-100 pb-2 border-bottom" src="assets/img/timescale_light.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card grindingStatus mb-3" style="width: 350px;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col"><em>Next Model</em>
+                                                <div class="databox mb-0"><span>-</span></div>
+                                            </div>
+                                            <div class="col"><em>Next Type</em>
+                                                <div class="databox mb-0"><span>Final</span></div>
+                                            </div>
+                                            <div class="col"><em>&nbsp;Next Lot</em>
+                                                <div class="databox mb-0"><span>-</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                        <div class="col-auto"><a href="production_grindingplan.html">
+                                <div class="card grindingStatus mb-1" style="width: 350px;">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold text-center card-title">Grinding 3</h4>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col"><em>Total Output/Day</em>
+                                                        <div class="databox"><span>3600</span></div>
+                                                    </div>
+                                                </div>
+                                                <h6 class="font-weight-bold">Now production&nbsp;</h6>
+                                                <div class="row">
+                                                    <div class="col"><em>Model</em>
+                                                        <div class="databox"><span>-</span></div>
+                                                    </div>
+                                                    <div class="col"><em>Type</em>
+                                                        <div class="databox"><span>Final</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"><em>Lot no.</em>
+                                                        <div class="databox"><span>-</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col text-center"><em>Current Status</em>
+                                                <div class="row">
+                                                    <div class="col d-xl-flex justify-content-xl-center">
+                                                        <div class="statuslamp color-mcdowntime"><span>Machine<br>Downtime</span></div>
+                                                    </div>
+                                                </div><em>Productivity</em>
+                                                <div class="row">
+                                                    <div class="col-xl-12 text-center"><img src="assets/img/thermostat.svg" width="109" height="86"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><em>Timeline</em>
+                                                <div class="progress mb-2">
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-secondary" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+                                                </div><img class="w-100 pb-2 border-bottom" src="assets/img/timescale_light.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card grindingStatus mb-3" style="width: 350px;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col"><em>Next Model</em>
+                                                <div class="databox mb-0"><span>-</span></div>
+                                            </div>
+                                            <div class="col"><em>Next Type</em>
+                                                <div class="databox mb-0"><span>Final</span></div>
+                                            </div>
+                                            <div class="col"><em>&nbsp;Next Lot</em>
+                                                <div class="databox mb-0"><span>-</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                        <div class="col-auto"><a href="production_grindingplan.html">
+                                <div class="card grindingStatus mb-1" style="width: 350px;">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold text-center card-title">Grinding 4</h4>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col"><em>Total Output/Day</em>
+                                                        <div class="databox"><span>3600</span></div>
+                                                    </div>
+                                                </div>
+                                                <h6 class="font-weight-bold">Now production&nbsp;</h6>
+                                                <div class="row">
+                                                    <div class="col"><em>Model</em>
+                                                        <div class="databox"><span>-</span></div>
+                                                    </div>
+                                                    <div class="col"><em>Type</em>
+                                                        <div class="databox"><span>Final</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"><em>Lot no.</em>
+                                                        <div class="databox"><span>-</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col text-center"><em>Current Status</em>
+                                                <div class="row">
+                                                    <div class="col d-xl-flex justify-content-xl-center">
+                                                        <div class="statuslamp color-noplan"><span>No Plan</span></div>
+                                                    </div>
+                                                </div><em>Productivity</em>
+                                                <div class="row">
+                                                    <div class="col-xl-12 text-center"><img src="assets/img/thermostat.svg" width="109" height="86"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><em>Timeline</em>
+                                                <div class="progress mb-2">
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-secondary" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+                                                </div><img class="w-100 pb-2 border-bottom" src="assets/img/timescale_light.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card grindingStatus mb-3" style="width: 350px;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col"><em>Next Model</em>
+                                                <div class="databox mb-0"><span>-</span></div>
+                                            </div>
+                                            <div class="col"><em>Next Type</em>
+                                                <div class="databox mb-0"><span>Final</span></div>
+                                            </div>
+                                            <div class="col"><em>&nbsp;Next Lot</em>
+                                                <div class="databox mb-0"><span>-</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                        <div class="col-auto"><a href="production_grindingplan.html">
+                                <div class="card grindingStatus mb-1" style="width: 350px;">
+                                    <div class="card-body">
+                                        <h4 class="font-weight-bold text-center card-title">Grinding 5</h4>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="row">
+                                                    <div class="col"><em>Total Output/Day</em>
+                                                        <div class="databox"><span>3600</span></div>
+                                                    </div>
+                                                </div>
+                                                <h6 class="font-weight-bold">Now production&nbsp;</h6>
+                                                <div class="row">
+                                                    <div class="col"><em>Model</em>
+                                                        <div class="databox"><span>-</span></div>
+                                                    </div>
+                                                    <div class="col"><em>Type</em>
+                                                        <div class="databox"><span>Final</span></div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col"><em>Lot no.</em>
+                                                        <div class="databox"><span>-</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col text-center"><em>Current Status</em>
+                                                <div class="row">
+                                                    <div class="col d-xl-flex justify-content-xl-center">
+                                                        <div class="statuslamp color-run"><span>Running</span></div>
+                                                    </div>
+                                                </div><em>Productivity</em>
+                                                <div class="row">
+                                                    <div class="col-xl-12 text-center"><img src="assets/img/thermostat.svg" width="109" height="86"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col"><em>Timeline</em>
+                                                <div class="progress mb-2">
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-secondary" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-warning" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+                                                    <div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 5%;"></div>
+                                                </div><img class="w-100 pb-2 border-bottom" src="assets/img/timescale_light.svg">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card grindingStatus mb-3" style="width: 350px;">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col"><em>Next Model</em>
+                                                <div class="databox mb-0"><span>-</span></div>
+                                            </div>
+                                            <div class="col"><em>Next Type</em>
+                                                <div class="databox mb-0"><span>Final</span></div>
+                                            </div>
+                                            <div class="col"><em>&nbsp;Next Lot</em>
+                                                <div class="databox mb-0"><span>-</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/reportselect.js"></script>
+    <script src="assets/js/SidePanel.js"></script>
+    <script src="assets/js/tablescroll.js"></script>
+</body>
+
+</html>

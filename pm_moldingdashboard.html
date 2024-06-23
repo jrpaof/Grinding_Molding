@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GRINDING&amp;MOLDING</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/AnimatePageChange.css">
+    <link rel="stylesheet" href="assets/css/glowAnimation.css">
+    <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/moduleSelect.css">
+    <link rel="stylesheet" href="assets/css/ScrollBar.css">
+    <link rel="stylesheet" href="assets/css/SidePanel.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="sidehide sidepanel rounded shadow" id="sidepanel"><button class="btn btn-link float-right p-0 closebtn" type="button" onclick="closeNav()"><i class="fa fa-close"></i></button>
+            <h6 class="m-3">Navigation</h6>
+            <div class="container"><a class="mb-1" href="moduleSelect.html"><i class="fa fa-home mr-2"></i>Home</a><span class="font-weight-bold text-black-50">----------&nbsp; Grinding&nbsp; -----------</span><a class="mb-1" href="dash_grinding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_grindingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_grindingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_grindingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; Molding&nbsp; ----------</span><a class="mb-1" href="dash_molding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_moldingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_moldingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_moldingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; PM ----------</span><a class="mb-1" href="pm_pmmachinedashboard.html"><i class="fa fa-shield mr-2"></i>PM Machine</a><a class="mb-1" href="pm_moldingdashboard.html"><i class="fa fa-shield mr-2"></i>PM Molding</a></div>
+            <div class="container"><span class="text-black-50">User :</span><a class="mb-1"><i class="fa fa-sign-out mr-2"></i>Logout</a></div>
+        </div>
+        <div id="content-wrapper">
+            <nav class="navbar navbar-light navbar-expand-md pageHeader">
+                <div class="container-fluid"><button class="btn btn-primary float-left m-0 openbtn" type="button" onclick="openNav()"><i class="fa fa-navicon text-light"></i></button><a class="navbar-brand font-weight-bold text-light" href="#">Molding PM Dashboard</a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span>
+                    <div class="d-flex align-items-center"><a class="btn btn-primary mx-2" role="button" href="pm_menu.html"><i class="fa fa-backward text-light"></i></a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span></div>
+                </div>
+            </nav>
+            <div id="content" class="animate-in">
+                <div class="container-fluid py-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="carousel slide" data-ride="carousel" id="carousel-1">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card text-center mb-3 shadow grindingCard">
+                                            <div class="card-body">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-11">
+                                                        <h4>Dashboard Shot Mold</h4>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="table-responsive font-weight-bold" style="background: #ffffff;">
+                                                                    <table class="table table-hover table-bordered table-sm">
+                                                                        <thead class="thead-dark">
+                                                                            <tr>
+                                                                                <th colspan="25">Dashboard Mold</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="table-primary">
+                                                                                <td>Line No.</td>
+                                                                                <td>Mold</td>
+                                                                                <td colspan="2">Die No.</td>
+                                                                                <td>Target</td>
+                                                                                <td>Old Shot/ยอดยกมา</td>
+                                                                                <td>Shot/Day</td>
+                                                                                <td>Actual Total</td>
+                                                                                <td>Status</td>
+                                                                            </tr>
+                                                                            <tr role="button" href="">
+                                                                                <td>1</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>1800</td>
+                                                                                <td>500</td>
+                                                                                <td>30</td>
+                                                                                <td>530</td>
+                                                                                <td class="table-success"><i class="fa fa-star mx-2"></i>OK</td>
+                                                                            </tr>
+                                                                            <tr role="button" href="">
+                                                                                <td>2</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>1800</td>
+                                                                                <td>500</td>
+                                                                                <td>30</td>
+                                                                                <td>530</td>
+                                                                                <td class="table-danger"><i class="fa fa-star-half-o mx-2"></i>PM</td>
+                                                                            </tr>
+                                                                            <tr role="button" href="">
+                                                                                <td>3</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>1800</td>
+                                                                                <td>500</td>
+                                                                                <td>30</td>
+                                                                                <td>530</td>
+                                                                                <td class="table-danger"><i class="fa fa-star-half-o mx-2"></i>PM</td>
+                                                                            </tr>
+                                                                            <tr role="button" href="">
+                                                                                <td>4</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>1800</td>
+                                                                                <td>500</td>
+                                                                                <td>30</td>
+                                                                                <td>530</td>
+                                                                                <td class="table-success"><i class="fa fa-star mx-2"></i>OK</td>
+                                                                            </tr>
+                                                                            <tr role="button" href="">
+                                                                                <td>5</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>1800</td>
+                                                                                <td>500</td>
+                                                                                <td>30</td>
+                                                                                <td>530</td>
+                                                                                <td class="table-success"><i class="fa fa-star mx-2"></i>OK</td>
+                                                                            </tr>
+                                                                            <tr role="button" href="">
+                                                                                <td>6</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>1800</td>
+                                                                                <td>500</td>
+                                                                                <td>30</td>
+                                                                                <td>530</td>
+                                                                                <td class="table-success"><i class="fa fa-star mx-2"></i>OK</td>
+                                                                            </tr>
+                                                                            <tr role="button" href="">
+                                                                                <td>7</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>1800</td>
+                                                                                <td>500</td>
+                                                                                <td>30</td>
+                                                                                <td>530</td>
+                                                                                <td class="table-success"><i class="fa fa-star mx-2"></i>OK</td>
+                                                                            </tr>
+                                                                            <tr role="button" href="">
+                                                                                <td>8</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>1800</td>
+                                                                                <td>500</td>
+                                                                                <td>30</td>
+                                                                                <td>530</td>
+                                                                                <td class="table-success"><i class="fa fa-star mx-2"></i>OK</td>
+                                                                            </tr>
+                                                                            <tr role="button" href="">
+                                                                                <td>9</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>1800</td>
+                                                                                <td>500</td>
+                                                                                <td>30</td>
+                                                                                <td>530</td>
+                                                                                <td class="table-success"><i class="fa fa-star mx-2"></i>OK</td>
+                                                                            </tr>
+                                                                            <tr role="button" href="">
+                                                                                <td>10</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>1800</td>
+                                                                                <td>500</td>
+                                                                                <td>30</td>
+                                                                                <td>530</td>
+                                                                                <td class="table-success"><i class="fa fa-star mx-2"></i>OK</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div style="height: 378px;"><canvas data-bss-chart="{&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;,&quot;10&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Shot/Day&quot;,&quot;backgroundColor&quot;:&quot;#dfb64e&quot;,&quot;borderColor&quot;:&quot;#4e73df&quot;,&quot;data&quot;:[&quot;4500&quot;,&quot;5300&quot;,&quot;6250&quot;,&quot;7800&quot;,&quot;9800&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:true,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;,&quot;fontColor&quot;:&quot;#e4e8f8&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;bold&quot;,&quot;display&quot;:true,&quot;text&quot;:&quot;Overall Shot mold&quot;,&quot;fontColor&quot;:&quot;#e4e8f8&quot;,&quot;fontSize&quot;:2},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#e4e8f8&quot;,&quot;fontStyle&quot;:&quot;normal&quot;}}],&quot;yAxes&quot;:[{&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#e4e8f8&quot;,&quot;fontStyle&quot;:&quot;normal&quot;}}]}}}"></canvas></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card bg-info text-center mb-3 shadow">
+                                            <div class="card-body">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-11">
+                                                        <h4 class="text-light">PM Machine</h4>
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-2"><em>Machine:</em><input class="form-control-sm form-control mb-2" type="text" value="Molding" readonly="" style="text-align: center;"></div>
+                                                            <div class="col-2 col-xl-2"><em>Department:</em><input class="form-control-sm form-control mb-2" type="text" value="-" readonly="" style="text-align: center;"></div>
+                                                            <div class="col-2"><em>Responsible:</em><input class="form-control-sm form-control mb-2" type="text" value="name" readonly="" style="text-align: center;"></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="table-responsive" style="font-size: .75rem;">
+                                                                    <table class="table table-hover table-dark table-bordered">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>Date</th>
+                                                                                <th>1</th>
+                                                                                <th>2</th>
+                                                                                <th>3</th>
+                                                                                <th>4</th>
+                                                                                <th>5</th>
+                                                                                <th>6</th>
+                                                                                <th>7</th>
+                                                                                <th>8</th>
+                                                                                <th>9</th>
+                                                                                <th>10</th>
+                                                                                <th>11</th>
+                                                                                <th>12</th>
+                                                                                <th>13</th>
+                                                                                <th>14</th>
+                                                                                <th>15</th>
+                                                                                <th>16</th>
+                                                                                <th>17</th>
+                                                                                <th>18</th>
+                                                                                <th>19</th>
+                                                                                <th>20</th>
+                                                                                <th>21</th>
+                                                                                <th>22</th>
+                                                                                <th>23</th>
+                                                                                <th>24</th>
+                                                                                <th>25</th>
+                                                                                <th>26</th>
+                                                                                <th>27</th>
+                                                                                <th>28</th>
+                                                                                <th>29</th>
+                                                                                <th>30</th>
+                                                                                <th>31</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr class="bg-light text-dark" role="button" href="">
+                                                                                <td>Model</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                            </tr>
+                                                                            <tr class="bg-light text-dark">
+                                                                                <td rowspan="2">Die no.</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                            </tr>
+                                                                            <tr class="bg-light text-dark">
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                            </tr>
+                                                                            <tr class="bg-light text-dark">
+                                                                                <td>Shot day</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>30</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                            </tr>
+                                                                            <tr class="bg-light text-dark">
+                                                                                <td>Accumulate</td>
+                                                                                <td>30</td>
+                                                                                <td>60</td>
+                                                                                <td>90</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                            </tr>
+                                                                            <tr class="bg-light text-dark">
+                                                                                <td>Total</td>
+                                                                                <td>530</td>
+                                                                                <td>560</td>
+                                                                                <td>590</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                            </tr>
+                                                                            <tr class="bg-light text-dark">
+                                                                                <td>Status</td>
+                                                                                <td>OK</td>
+                                                                                <td>OK</td>
+                                                                                <td class="bg-warning">PM</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                                <td>-</td>
+                                                                            </tr>
+                                                                            <tr class="bg-light text-dark">
+                                                                                <td>Lead clear Start</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                            </tr>
+                                                                            <tr class="bg-light text-dark">
+                                                                                <td>Lead clear Stop</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                            </tr>
+                                                                            <tr class="bg-light text-dark">
+                                                                                <td>MT Clear Start</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                            </tr>
+                                                                            <tr class="bg-light text-dark">
+                                                                                <td>MT Clear Stop</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                                <td>--:--</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev" style="width: 3%;"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next" style="width: 3%;"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-1" data-slide-to="1"></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/reportselect.js"></script>
+    <script src="assets/js/SidePanel.js"></script>
+    <script src="assets/js/tablescroll.js"></script>
+</body>
+
+</html>

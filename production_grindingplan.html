@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GRINDING&amp;MOLDING</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/AnimatePageChange.css">
+    <link rel="stylesheet" href="assets/css/glowAnimation.css">
+    <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/moduleSelect.css">
+    <link rel="stylesheet" href="assets/css/ScrollBar.css">
+    <link rel="stylesheet" href="assets/css/SidePanel.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="sidehide sidepanel rounded shadow" id="sidepanel"><button class="btn btn-link float-right p-0 closebtn" type="button" onclick="closeNav()"><i class="fa fa-close"></i></button>
+            <h6 class="m-3">Navigation</h6>
+            <div class="container"><a class="mb-1" href="moduleSelect.html"><i class="fa fa-home mr-2"></i>Home</a><span class="font-weight-bold text-black-50">----------&nbsp; Grinding&nbsp; -----------</span><a class="mb-1" href="dash_grinding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_grindingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_grindingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_grindingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; Molding&nbsp; ----------</span><a class="mb-1" href="dash_molding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_moldingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_moldingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_moldingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; PM ----------</span><a class="mb-1" href="pm_pmmachinedashboard.html"><i class="fa fa-shield mr-2"></i>PM Machine</a><a class="mb-1" href="pm_moldingdashboard.html"><i class="fa fa-shield mr-2"></i>PM Molding</a></div>
+            <div class="container"><span class="text-black-50">User :</span><a class="mb-1"><i class="fa fa-sign-out mr-2"></i>Logout</a></div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modalreport">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h4 class="modal-title">Report Select</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-row">
+                                <div class="col">
+                                    <h5>Select report/ เลือกชนิดรายงาน</h5>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-1" name="reporttype" value="daily"><label class="form-check-label" for="formCheck-1">Daily Report</label></div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="form-check"><input class="form-check-input" type="radio" id="formCheck-2" name="reporttype" value="monthly"><label class="form-check-label" for="formCheck-2">Monthly Report</label></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <h5>Select time/ เลือกช่วงเวลา</h5>
+                                </div>
+                            </div>
+                            <div class="form-row justify-content-center">
+                                <div class="col timeselectgroup daily">
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="col"><span>Date</span><input class="form-control" type="date"></div>
+                                            <div class="col"><span>Shift</span><select class="form-control">
+                                                    <option value="" selected="">Day</option>
+                                                    <option value="">Night</option>
+                                                </select></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col timeselectgroup monthly">
+                                    <div class="form-group"><span>Month</span><input class="form-control" type="month"></div>
+                                </div>
+                                <div class="col align-self-center"><button class="btn btn-primary" type="button">Export</button></div>
+                            </div>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modaladdplan">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <form>
+                        <div class="modal-header">
+                            <h4 class="modal-title">Add Plan</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-row">
+                                <div class="col">
+                                    <h5>เพิ่มแผน</h5>
+                                </div>
+                            </div>
+                            <div class="form-row justify-content-center">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <div class="form-row">
+                                            <div class="col"><span>Model<br>โมเดล<br></span><input class="form-control" type="text"></div>
+                                            <div class="col"><span>Lot no.<br>เลขล็อต<br></span><input class="form-control" type="text"></div>
+                                            <div class="col"><span>Type<br>ชนิด<br></span><select class="form-control">
+                                                    <option value="" selected="">First</option>
+                                                    <option value="">Final</option>
+                                                </select></div>
+                                            <div class="col"><span>Target<br>จำนวน<br></span><input class="form-control" type="number"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button><button class="btn btn-primary" type="button">Save</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="content-wrapper">
+            <nav class="navbar navbar-light navbar-expand-md pageHeader">
+                <div class="container-fluid"><button class="btn btn-primary float-left m-0 openbtn" type="button" onclick="openNav()"><i class="fa fa-navicon text-light"></i></button><a class="navbar-brand font-weight-bold text-light" href="#">Production : Grinding 1</a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span>
+                    <div class="d-flex align-items-center"><a class="btn btn-primary mx-2" role="button" href="production_grindingselect.html"><i class="fa fa-backward text-light"></i></a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span></div>
+                </div>
+            </nav>
+            <div id="content" class="animate-in">
+                <div class="container-fluid py-3">
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <h1 class="font-weight-bold text-center">Grinding 1</h1>
+                        </div>
+                        <div class="col-auto text-right"><a class="btn btn-primary btn-lg mx-2" role="button" href="production_grindingdowntime.html" style="font-size: 1.75rem;width: 20rem;">Downtime Input</a><button class="btn btn-primary btn-lg mx-2" type="button" style="font-size: 1.75rem;width: 20rem;" data-target="#modalreport" data-toggle="modal">Report</button><a class="btn btn-primary btn-lg mx-2" role="button" href="alarmlog_grinding.html" style="font-size: 1.75rem;width: 20rem;">Alarm log</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="font-weight-bold text-left">Shift Data&nbsp;</h4>
+                            <div class="row">
+                                <div class="col text-center">
+                                    <div class="card grindingCard-second mb-3">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6 class="font-weight-bold text-left">Production Date</h6>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="lead font-weight-bold text-center" style="font-size: 1.5rem;">23-10-2022</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col text-center">
+                                    <div class="card grindingCard-second mb-3">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6 class="font-weight-bold text-left">Shift</h6>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="lead font-weight-bold text-center" style="font-size: 1.5rem;">Day</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col text-center">
+                                    <div class="card grindingCard-second mb-3">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6 class="font-weight-bold text-left">Downtime Total</h6>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="lead font-weight-bold text-center" style="font-size: 1.5rem;">25 mins</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="card grindingCard-second mb-3">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <h6 class="font-weight-bold text-left">Shift Output</h6>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="lead font-weight-bold text-center" style="font-size: 1.5rem;">1200 pcs</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="font-weight-bold text-left">Now production Info</h4>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <div class="card grindingCard mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col d-xl-flex align-items-xl-center"><em>Model<br>โมเดล<br></em></div>
+                                    </div>
+                                    <div class="row h-75">
+                                        <div class="col">
+                                            <p class="lead text-nowrap font-weight-bold text-center m-0" style="font-size: 1.5rem;">-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col align-self-center">
+                            <div class="card grindingCard mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col d-xl-flex align-items-xl-center"><em>Type<br>ชนิด</em></div>
+                                    </div>
+                                    <div class="row h-75">
+                                        <div class="col">
+                                            <p class="lead font-weight-bold text-center m-0" style="font-size: 1.5rem;">Final</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col align-self-center">
+                            <div class="card grindingCard mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col d-xl-flex align-items-xl-center"><em>Lot no.<br>ล็อต</em></div>
+                                    </div>
+                                    <div class="row h-75">
+                                        <div class="col">
+                                            <p class="lead font-weight-bold text-center m-0" style="font-size: 1.5rem;">-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col align-self-center">
+                            <div class="card grindingCard mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col d-xl-flex align-items-xl-center"><em>Start time<br>เวลาเริ่ม</em></div>
+                                    </div>
+                                    <div class="row h-75">
+                                        <div class="col">
+                                            <p class="lead font-weight-bold text-center m-0" style="font-size: 1.5rem;">11:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col align-self-center">
+                            <div class="card grindingCard mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col d-xl-flex align-items-xl-center"><em>Est. End<br>เวลาจบ</em></div>
+                                    </div>
+                                    <div class="row h-75">
+                                        <div class="col">
+                                            <p class="lead font-weight-bold text-center m-0" style="font-size: 1.5rem;">15:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col align-self-center">
+                            <div class="card grindingCard mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col d-xl-flex align-items-xl-center"><em>Target&nbsp;<br>จำนวน</em></div>
+                                    </div>
+                                    <div class="row h-75">
+                                        <div class="col">
+                                            <p class="lead font-weight-bold text-center m-0" style="font-size: 1.5rem;">1200</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col align-self-center">
+                            <div class="card grindingCard mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col d-xl-flex align-items-xl-center"><em>Output<br>งานที่ได้</em></div>
+                                    </div>
+                                    <div class="row h-75">
+                                        <div class="col">
+                                            <p class="lead font-weight-bold text-center m-0" style="font-size: 1.5rem;">1200</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col align-self-center">
+                            <div class="card grindingCard mb-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col d-xl-flex align-items-xl-center"><em>Status<br>สถานะ</em></div>
+                                    </div>
+                                    <div class="row h-75">
+                                        <div class="col">
+                                            <div class="d-flex d-xl-flex justify-content-center align-items-center m-0 color-run statusbox" style="width: 208px;height: 73px;"><span style="font-size: 1.5rem;">Running</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col align-self-center">
+                                    <h4 class="font-weight-bold text-left">Planning<input class="mx-2" type="date" style="font-size: 1rem;"></h4>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="table-responsive grindingTable productiontable" style="height: 532px;">
+                                        <table class="table table-hover table-borderless">
+                                            <thead>
+                                                <tr>
+                                                    <th>No.</th>
+                                                    <th>Plan Date</th>
+                                                    <th>Model</th>
+                                                    <th>Lot no</th>
+                                                    <th>Type</th>
+                                                    <th>Time Start</th>
+                                                    <th>Time End</th>
+                                                    <th>Target Output</th>
+                                                    <th>OK</th>
+                                                    <th>NG</th>
+                                                    <th>Status</th>
+                                                    <th>Productivity</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1.</td>
+                                                    <td>23-10-2022</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>Final</td>
+                                                    <td>8:00</td>
+                                                    <td>11:00</td>
+                                                    <td>1200</td>
+                                                    <td>1200</td>
+                                                    <td>0</td>
+                                                    <td><i class="fa fa-check mx-2"></i>Finish</td>
+                                                    <td>50%</td>
+                                                </tr>
+                                                <tr class="color-run">
+                                                    <td>2.</td>
+                                                    <td>23-10-2022</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>Final</td>
+                                                    <td>11:00</td>
+                                                    <td>-</td>
+                                                    <td>1200</td>
+                                                    <td>985</td>
+                                                    <td>0</td>
+                                                    <td><span class="spinner-border spinner-border-sm mx-2" role="status"></span>Working</td>
+                                                    <td>50%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>3.</td>
+                                                    <td>23-10-2022</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>Final</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>1200</td>
+                                                    <td>985</td>
+                                                    <td>0</td>
+                                                    <td><i class="fa fa-hourglass-half mx-2"></i>Plan</td>
+                                                    <td>50%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>4.</td>
+                                                    <td>23-10-2022</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>Final</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>1200</td>
+                                                    <td>985</td>
+                                                    <td>0</td>
+                                                    <td><i class="fa fa-hourglass-half mx-2"></i>Plan</td>
+                                                    <td>50%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>5.</td>
+                                                    <td>23-10-2022</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>Final</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>1200</td>
+                                                    <td>985</td>
+                                                    <td>0</td>
+                                                    <td><i class="fa fa-hourglass-half mx-2"></i>Plan</td>
+                                                    <td>50%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>6.</td>
+                                                    <td>23-10-2022</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>Final</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>1200</td>
+                                                    <td>985</td>
+                                                    <td>0</td>
+                                                    <td><i class="fa fa-hourglass-half mx-2"></i>Plan</td>
+                                                    <td>50%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>7.</td>
+                                                    <td>23-10-2022</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>Final</td>
+                                                    <td>-</td>
+                                                    <td>-</td>
+                                                    <td>1200</td>
+                                                    <td>985</td>
+                                                    <td>0</td>
+                                                    <td><i class="fa fa-hourglass-half mx-2"></i>Plan</td>
+                                                    <td>50%</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <h4 class="font-weight-bold text-left">Action</h4>
+                            <div class="card mb-3">
+                                <div class="card-body shadow">
+                                    <div class="row">
+                                        <div class="col text-center"><button class="btn btn-primary btn-lg my-3 mx-2" type="button" style="font-size: 1rem;width: 17rem;" data-target="#modaladdplan" data-toggle="modal"><span>Add Plan<br>เพิ่มแผน<br></span></button></div>
+                                        <div class="col text-center"><a class="btn btn-success btn-lg my-3 mx-2" role="button" style="font-size: 1rem;width: 17rem;"><span>Start Plan<br>เริ่มแผน<br></span></a></div>
+                                        <div class="col text-center"><a class="btn btn-success btn-lg my-3 mx-2" role="button" style="font-size: 1rem;width: 17rem;"><span>End Plan<br>จบแผน<br></span></a></div>
+                                        <div class="col text-center"><button class="btn btn-danger btn-lg my-3 mx-2" type="button" style="font-size: 1rem;width: 17rem;"><span>Delete Plan<br>ลบแผน<br></span></button></div>
+                                        <div class="col text-center"><button class="btn btn-info btn-lg my-3 mx-2" type="button" style="font-size: 1rem;width: 17rem;"><span>Brake/End Shift<br>เบรก/จบกะ<br></span></button></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card shadow grindingCard">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-auto align-self-center">
+                                            <h4 class="font-weight-bold text-left">Production Data</h4>
+                                        </div>
+                                        <div class="col-auto"><span>Lot No.<br>ล็อต</span>
+                                            <div class="databox" style="width: 6rem;"><span>-</span></div>
+                                        </div>
+                                        <div class="col-auto"><span>Type<br>ชนิด</span>
+                                            <div class="databox" style="width: 6rem;"><span>Final</span></div>
+                                        </div>
+                                        <div class="col-auto"><span>Target<br>จำนวน</span>
+                                            <div class="databox" style="width: 6rem;"><span>1200</span></div>
+                                        </div>
+                                        <div class="col-auto"><span>Total OK<br>จำนวนงานดี</span>
+                                            <div class="databox" style="width: 6rem;"><span>1189</span></div>
+                                        </div>
+                                        <div class="col-auto"><span>Total NG<br>จำนวนงานเสีย<br></span>
+                                            <div class="databox" style="width: 6rem;"><span>11</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="table-responsive grindingTable-light productiontable" style="height: 428px;">
+                                                <table class="table table-hover table-borderless">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>No.</th>
+                                                            <th>Production Date<br>วันที่ผลิต</th>
+                                                            <th>Production Shift<br>กะที่ผลิต</th>
+                                                            <th>Output<br>งานที่ได้</th>
+                                                            <th>NG<br>งานเสีย</th>
+                                                            <th>Setup<br>งานSetup</th>
+                                                            <th>Time Start<br>เวลาเริ่ม</th>
+                                                            <th>Time End<br>เวลาจบ</th>
+                                                            <th>Operator<br>พนักงาน</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1.</td>
+                                                            <td>23-10-2022</td>
+                                                            <td>Day</td>
+                                                            <td>497</td>
+                                                            <td>3</td>
+                                                            <td>5</td>
+                                                            <td>11:00</td>
+                                                            <td>1200</td>
+                                                            <td>A</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2.</td>
+                                                            <td>23-10-2022</td>
+                                                            <td>Night</td>
+                                                            <td>692</td>
+                                                            <td>8</td>
+                                                            <td>5</td>
+                                                            <td>1200</td>
+                                                            <td>1200</td>
+                                                            <td>B</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card grindingCard-second">
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-auto align-self-center"><strong class="text-dark" style="font-size: 1.5rem;">Lot Data/ ข้อมูลการผลิต</strong></div>
+                                                    </div>
+                                                    <form>
+                                                        <div class="form-row">
+                                                            <div class="col-auto">
+                                                                <div class="form-group"><span class="text-dark">Production Date</span><input class="form-control form-control-sm" type="date" readonly="" style="width: 15rem;"></div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <div class="form-group"><span class="text-dark">Shift</span><input class="form-control form-control-sm" type="text" readonly="" style="width: 5rem;"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col">
+                                                                <div class="form-group"><span class="text-dark">Machine Output<br>งานจากเครื่อง<br></span>
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-prepend"></div><input class="form-control" type="text" readonly="">
+                                                                        <div class="input-group-append"><span class="text-dark input-group-text">pcs</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group"><span class="text-dark">Final Output<br>งานที่ได้<br></span>
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-prepend"></div><input class="form-control" type="number">
+                                                                        <div class="input-group-append"><span class="text-dark input-group-text">pcs</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group"><span class="text-dark">OK<br>งานดี<br></span>
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-prepend"></div><input class="form-control" type="text" readonly="">
+                                                                        <div class="input-group-append"><span class="text-dark input-group-text">pcs</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group"><span class="text-dark">NG<br>งานเสีย<br></span>
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-prepend"></div><input class="form-control" type="text" readonly="">
+                                                                        <div class="input-group-append"><span class="text-dark input-group-text">pcs</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col">
+                                                                <div class="form-group"><span class="text-dark">Setup<br>งานเซทอัพ<br></span>
+                                                                    <div class="input-group">
+                                                                        <div class="input-group-prepend"></div><input class="form-control" type="number">
+                                                                        <div class="input-group-append"><span class="text-dark input-group-text">pcs</span></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col text-right"><button class="btn btn-success mb-3" type="button">save/ บันทึก</button></div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col-auto align-self-center"><strong class="text-dark" style="font-size: 1.5rem;">NG Data/ ข้อมูลงานเสีย</strong></div>
+                                                        </div>
+                                                        <div class="form-row">
+                                                            <div class="col">
+                                                                <div class="table-responsive grindingTable productiontable">
+                                                                    <table class="table table-hover table-borderless">
+                                                                        <thead>
+                                                                            <tr>
+                                                                                <th>No.</th>
+                                                                                <th>NG Type<br>ชนิดงานเสีย</th>
+                                                                                <th>Quantity<br>จำนวน</th>
+                                                                                <th>Cause<br>สาเหตุ</th>
+                                                                                <th>Remark<br>หมายเหตุ</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td>1.</td>
+                                                                                <td>NG Case 1</td>
+                                                                                <td>2</td>
+                                                                                <td>ระบุสาเหตุ</td>
+                                                                                <td>-</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>2.</td>
+                                                                                <td>NG Case 2</td>
+                                                                                <td>3</td>
+                                                                                <td>ระบุสาเหตุ</td>
+                                                                                <td>-</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                                <div class="form-row">
+                                                                    <div class="col"><span class="text-dark">Total NG<br>งานเสียรวม<br></span>
+                                                                        <div class="input-group" style="width: 10rem;">
+                                                                            <div class="input-group-prepend"></div><input class="form-control" type="text" readonly="">
+                                                                            <div class="input-group-append"><span class="text-dark input-group-text">pcs</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-auto">
+                                                                <form class="p-2">
+                                                                    <div class="form-row">
+                                                                        <div class="col"><span class="text-dark">NG Type<br>ชนิดงานเสีย<br></span><select class="form-control">
+                                                                                <optgroup label="This is a group">
+                                                                                    <option value="12" selected="">This is item 1</option>
+                                                                                    <option value="13">This is item 2</option>
+                                                                                    <option value="14">This is item 3</option>
+                                                                                </optgroup>
+                                                                            </select></div>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="col">
+                                                                            <div class="form-group"><span class="text-dark">Quantity<br>จำนวน<br></span>
+                                                                                <div class="input-group">
+                                                                                    <div class="input-group-prepend"></div><input class="form-control" type="text">
+                                                                                    <div class="input-group-append"><span class="text-dark input-group-text">pcs</span></div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="col">
+                                                                            <div class="form-group"><span class="text-dark">Cause<br>สาเหตุ<br></span><input class="form-control" type="text"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="col">
+                                                                            <div class="form-group"><span class="text-dark">Cause<br>สาเหตุ<br></span><input class="form-control" type="text"></div>
+                                                                            <div class="form-row">
+                                                                                <div class="col text-right"><button class="btn btn-primary mb-3 mx-2" type="button">Add/ เพิ่ม</button><button class="btn btn-success mb-3 mx-2" type="button">save/ บันทึก</button><button class="btn btn-danger mb-3 mx-2" type="button">Delete/ ลบ</button></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/reportselect.js"></script>
+    <script src="assets/js/SidePanel.js"></script>
+    <script src="assets/js/tablescroll.js"></script>
+</body>
+
+</html>

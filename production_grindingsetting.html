@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GRINDING&amp;MOLDING</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/AnimatePageChange.css">
+    <link rel="stylesheet" href="assets/css/glowAnimation.css">
+    <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/moduleSelect.css">
+    <link rel="stylesheet" href="assets/css/ScrollBar.css">
+    <link rel="stylesheet" href="assets/css/SidePanel.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="sidehide sidepanel rounded shadow" id="sidepanel"><button class="btn btn-link float-right p-0 closebtn" type="button" onclick="closeNav()"><i class="fa fa-close"></i></button>
+            <h6 class="m-3">Navigation</h6>
+            <div class="container"><a class="mb-1" href="moduleSelect.html"><i class="fa fa-home mr-2"></i>Home</a><span class="font-weight-bold text-black-50">----------&nbsp; Grinding&nbsp; -----------</span><a class="mb-1" href="dash_grinding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_grindingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_grindingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_grindingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; Molding&nbsp; ----------</span><a class="mb-1" href="dash_molding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_moldingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_moldingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_moldingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; PM ----------</span><a class="mb-1" href="pm_pmmachinedashboard.html"><i class="fa fa-shield mr-2"></i>PM Machine</a><a class="mb-1" href="pm_moldingdashboard.html"><i class="fa fa-shield mr-2"></i>PM Molding</a></div>
+            <div class="container"><span class="text-black-50">User :</span><a class="mb-1"><i class="fa fa-sign-out mr-2"></i>Logout</a></div>
+        </div>
+        <div id="content-wrapper">
+            <nav class="navbar navbar-light navbar-expand-md pageHeader">
+                <div class="container-fluid"><button class="btn btn-primary float-left m-0 openbtn" type="button" onclick="openNav()"><i class="fa fa-navicon text-light"></i></button><a class="navbar-brand font-weight-bold text-light" href="#">Production : Grinding 1</a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span>
+                    <div class="d-flex align-items-center"><a class="btn btn-primary mx-2" role="button" href="production_menu.html"><i class="fa fa-backward text-light"></i></a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span></div>
+                </div>
+            </nav>
+            <div id="content" class="animate-in">
+                <div class="container-fluid py-3">
+                    <div class="row">
+                        <div class="col align-self-center">
+                            <h1 class="font-weight-bold text-center">Grinding Setting</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="grindingCard">
+                                <ul class="nav nav-tabs nav-justified" role="tablist" style="font-size: 1.5rem;">
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#mcsetting">Machine Setting</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="tab" href="#modelsetting">Model Setting</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#downtimesetting">Downtime Setting</a></li>
+                                    <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#ngsetting">NG Setting</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade" role="tabpanel" id="mcsetting">
+                                        <div class="card shadow grindingCard">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-auto align-self-center">
+                                                        <h4 class="font-weight-bold text-left">Machine List</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="table-responsive grindingTable-light productiontable" style="height: 680px;">
+                                                            <table class="table table-hover table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Machine ID<br>ไอดีเครื่อง</th>
+                                                                        <th>Machine Name<br>ชื่อเครื่อง</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-center">1</td>
+                                                                        <td>Grinding1</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center">2</td>
+                                                                        <td>Grinding2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center">3</td>
+                                                                        <td>Grinding3</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="card grindingCard-second">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-auto align-self-center"><strong class="text-dark" style="font-size: 1.5rem;">Machine Detail/รายละเอียดเครื่อง</strong></div>
+                                                                </div>
+                                                                <form>
+                                                                    <div class="form-row">
+                                                                        <div class="col">
+                                                                            <form class="p-2">
+                                                                                <div class="form-row">
+                                                                                    <div class="col">
+                                                                                        <div class="form-group"><span class="text-dark">Machine ID/ ไอดีเครื่อง<br></span><input class="form-control" type="text" readonly=""></div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-row">
+                                                                                                <div class="col"><span class="text-dark">Machine name/ ชื่อเครื่อง<br></span><input class="form-control" type="text"></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-row">
+                                                                                            <div class="col text-right"><button class="btn btn-success mb-3 mx-2" type="button">save/ บันทึก</button></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade show active" role="tabpanel" id="modelsetting">
+                                        <div class="card shadow grindingCard">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-auto align-self-center">
+                                                        <h4 class="font-weight-bold text-left">Model List</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="table-responsive grindingTable-light productiontable" style="height: 680px;">
+                                                            <table class="table table-hover table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Model ID<br>โมเดลงาน</th>
+                                                                        <th>Model Name<br>ชื่อโมเดล</th>
+                                                                        <th>Grinding Cycle time<br>เวลามาตรฐาน (min/pcs)</th>
+                                                                        <th>Grinding Cavity (First)<br>จำนวนงานต่อช็อต (First)</th>
+                                                                        <th>Grinding Cavity (Final)<br>จำนวนงานต่อช็อต (Final)</th>
+                                                                        <th>Grinding Final Type<br>ชนิดงานไฟนอล</th>
+                                                                        <th>Molding Cycle time<br>เวลามาตรฐาน (min/pcs)</th>
+                                                                        <th>Molding Cavity<br>จำนวนงานต่อช็อต</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-center">1</td>
+                                                                        <td>A</td>
+                                                                        <td>0.3</td>
+                                                                        <td>2</td>
+                                                                        <td>2</td>
+                                                                        <td>-</td>
+                                                                        <td>0.3</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center">2</td>
+                                                                        <td>B</td>
+                                                                        <td>0.3</td>
+                                                                        <td>2</td>
+                                                                        <td>2</td>
+                                                                        <td>-</td>
+                                                                        <td>0.3</td>
+                                                                        <td>2</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center">3</td>
+                                                                        <td>C</td>
+                                                                        <td>0.4</td>
+                                                                        <td>4</td>
+                                                                        <td>4</td>
+                                                                        <td>-</td>
+                                                                        <td>0.4</td>
+                                                                        <td>4</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="card grindingCard-second">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-auto align-self-center"><strong class="text-dark" style="font-size: 1.5rem;">Model Detail/รายละเอียดโมเดล</strong></div>
+                                                                </div>
+                                                                <form>
+                                                                    <div class="form-row">
+                                                                        <div class="col">
+                                                                            <form class="p-2">
+                                                                                <div class="form-row">
+                                                                                    <div class="col">
+                                                                                        <div class="form-row">
+                                                                                            <div class="col text-right"><button class="btn btn-primary btn-sm mb-3 mx-2" type="button">Add/ เพิ่ม</button></div>
+                                                                                        </div>
+                                                                                        <div class="form-group"><span class="text-dark">Model ID/ ไอดีโมเดล<br></span><input class="form-control" type="text" readonly="" value="1"></div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-row">
+                                                                                                <div class="col"><span class="text-dark">Model name/ ชื่อโมเดล<br></span><input class="form-control" type="text"></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <h5 class="font-weight-bold">Grinding</h5>
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-row">
+                                                                                                <div class="col"><span class="text-dark">Grinding Cycle time/ เวลามาตรฐาน (min/pcs)<br></span>
+                                                                                                    <div class="input-group">
+                                                                                                        <div class="input-group-prepend"></div><input class="form-control" type="text">
+                                                                                                        <div class="input-group-append"><span class="text-dark input-group-text">m./pcs</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-row">
+                                                                                                <div class="col"><span class="text-dark">Grinding Cavity (First)/ จำนวนงานต่อช็อต (First)&nbsp;<br></span>
+                                                                                                    <div class="input-group">
+                                                                                                        <div class="input-group-prepend"></div><input class="form-control" type="text">
+                                                                                                        <div class="input-group-append"><span class="text-dark input-group-text">pcs</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-row">
+                                                                                                <div class="col"><span class="text-dark">Grinding Cavity (Final)/ จำนวนงานต่อช็อต (Final)<br></span>
+                                                                                                    <div class="input-group">
+                                                                                                        <div class="input-group-prepend"></div><input class="form-control" type="text">
+                                                                                                        <div class="input-group-append"><span class="text-dark input-group-text">pcs</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-row">
+                                                                                                <div class="col"><span class="text-dark">Grinding Final Type/ ชนิดงาน ไฟนอล</span><select class="form-control">
+                                                                                                        <option value="1" selected="">-</option>
+                                                                                                        <option value="2">-</option>
+                                                                                                    </select></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <h5 class="font-weight-bold">Molding</h5>
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-row">
+                                                                                                <div class="col"><span class="text-dark">Molding CT/ เวลามาตรฐาน (min/pcs)<br></span>
+                                                                                                    <div class="input-group">
+                                                                                                        <div class="input-group-prepend"></div><input class="form-control" type="text">
+                                                                                                        <div class="input-group-append"><span class="text-dark input-group-text">m./pcs</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-row">
+                                                                                                <div class="col"><span class="text-dark">Molding Cavity/ จำนวนงานต่อช็อต<br></span>
+                                                                                                    <div class="input-group">
+                                                                                                        <div class="input-group-prepend"></div><input class="form-control" type="text">
+                                                                                                        <div class="input-group-append"><span class="text-dark input-group-text">pcs</span></div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-row">
+                                                                                            <div class="col text-right"><button class="btn btn-success mb-3 mx-2" type="button">save/ บันทึก</button><button class="btn btn-danger mb-3 mx-2" type="button">Delete/ ลบ</button></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" role="tabpanel" id="downtimesetting">
+                                        <div class="card shadow grindingCard">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-auto align-self-center">
+                                                        <h4 class="font-weight-bold text-left">Downtime List</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="table-responsive grindingTable-light productiontable" style="height: 680px;">
+                                                            <table class="table table-hover table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>No.</th>
+                                                                        <th>Downtime Type<br>ชนิดของการหยุด</th>
+                                                                        <th>Downtime Case<br>สาเหตุการหยุด</th>
+                                                                        <th>Machine Alarm<br>อลาร์มที่เกี่ยวข้อง</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-center">1</td>
+                                                                        <td>-</td>
+                                                                        <td>-</td>
+                                                                        <td>-</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center">2</td>
+                                                                        <td>-</td>
+                                                                        <td>-</td>
+                                                                        <td>-</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center">3</td>
+                                                                        <td>-</td>
+                                                                        <td>-</td>
+                                                                        <td>-</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center">4</td>
+                                                                        <td>-</td>
+                                                                        <td>-</td>
+                                                                        <td>-</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="card grindingCard-second">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-auto align-self-center"><strong class="text-dark" style="font-size: 1.5rem;">Downtime Detail/รายละเอียดการหยุด</strong></div>
+                                                                </div>
+                                                                <form>
+                                                                    <div class="form-row">
+                                                                        <div class="col">
+                                                                            <form class="p-2">
+                                                                                <div class="form-row">
+                                                                                    <div class="col">
+                                                                                        <div class="form-row">
+                                                                                            <div class="col text-right"><button class="btn btn-primary btn-sm mb-3 mx-2" type="button">Add/ เพิ่ม</button></div>
+                                                                                        </div>
+                                                                                        <div class="form-group"><span class="text-dark">No./ ลำดับที่<br></span><input class="form-control" type="text" readonly="" value="1"></div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-row">
+                                                                                                <div class="col"><span class="text-dark">Downtime Type/ ชนิดการหยุด<br></span><select class="form-control">
+                                                                                                        <option value="" selected="">-</option>
+                                                                                                        <option value="">-</option>
+                                                                                                        <option value="">-</option>
+                                                                                                    </select></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-row">
+                                                                                                <div class="col"><span class="text-dark">Downtime case/ สาเหตุการหยุด<br></span><select class="form-control">
+                                                                                                        <option value="" selected="">Downtime case 1</option>
+                                                                                                        <option value="">Downtime case 2</option>
+                                                                                                        <option value="">Downtime case 3</option>
+                                                                                                    </select></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-row">
+                                                                                                <div class="col"><span class="text-dark">Machine Alarm/ อลาร์มที่เกี่ยวข้อง<br></span><select class="form-control">
+                                                                                                        <option value="" selected="">-</option>
+                                                                                                        <option value="">-</option>
+                                                                                                    </select></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-row">
+                                                                                            <div class="col text-right"><button class="btn btn-success mb-3 mx-2" type="button">save/ บันทึก</button><button class="btn btn-danger mb-3 mx-2" type="button">Delete/ ลบ</button></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" role="tabpanel" id="ngsetting">
+                                        <div class="card shadow grindingCard">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-auto align-self-center">
+                                                        <h4 class="font-weight-bold text-left">NG List</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="table-responsive grindingTable-light productiontable" style="height: 680px;">
+                                                            <table class="table table-hover table-bordered">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>No.</th>
+                                                                        <th>NG Case<br>สาเหตุงานเสีย</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="text-center">1</td>
+                                                                        <td>-</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center">2</td>
+                                                                        <td>-</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="text-center">3</td>
+                                                                        <td>-</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="card grindingCard-second">
+                                                            <div class="card-body">
+                                                                <div class="row">
+                                                                    <div class="col-auto align-self-center"><strong class="text-dark" style="font-size: 1.5rem;">NG Detail/รายละเอียดงานเสีย</strong></div>
+                                                                </div>
+                                                                <form>
+                                                                    <div class="form-row">
+                                                                        <div class="col">
+                                                                            <form class="p-2">
+                                                                                <div class="form-row">
+                                                                                    <div class="col">
+                                                                                        <div class="form-row">
+                                                                                            <div class="col text-right"><button class="btn btn-primary btn-sm mb-3 mx-2" type="button">Add/ เพิ่ม</button></div>
+                                                                                        </div>
+                                                                                        <div class="form-group"><span class="text-dark">No./ ลำดับที่<br></span><input class="form-control" type="text" readonly="" value="1"></div>
+                                                                                        <div class="form-group">
+                                                                                            <div class="form-row">
+                                                                                                <div class="col"><span class="text-dark">NG case/ สาเหตุงานเสีย<br></span><input class="form-control" type="text" placeholder="ระบุสาเหตุ"></div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="form-row">
+                                                                                            <div class="col text-right"><button class="btn btn-success mb-3 mx-2" type="button">save/ บันทึก</button><button class="btn btn-danger mb-3 mx-2" type="button">Delete/ ลบ</button></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/reportselect.js"></script>
+    <script src="assets/js/SidePanel.js"></script>
+    <script src="assets/js/tablescroll.js"></script>
+</body>
+
+</html>

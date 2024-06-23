@@ -1,0 +1,306 @@
+/* Font */
+
+body {
+  font-family: 'Roboto';
+  background-color: var(--white);
+}
+
+/* Style Card Grinding */
+
+.grindingCard {
+  background: transparent linear-gradient(243deg, #2F50BE 0%, #6341A7 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 4px 4px 20px #00000059;
+  border-radius: .5rem;
+  opacity: 1;
+  color: white;
+  border-style: none;
+}
+
+.grindingCard a {
+  color: white;
+}
+
+.grindingCard a:hover {
+  opacity: 1;
+  color: #baa4c2;
+}
+
+.grindingCard-second {
+  background: transparent linear-gradient(243deg, #fbf5ff 0%, #ddd1ff 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 4px 4px 20px #00000059;
+  border-radius: .5rem;
+  opacity: 1;
+  color: var(--dark);
+  border-style: none;
+}
+
+/* Style Card Molding */
+
+.moldingCard {
+  background: transparent linear-gradient(220deg, #efe3eb 0%, #e2d5e7 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 5px 5px 20px #00000059;
+  border-radius: 10px;
+  opacity: 1;
+  box-shadow: 5px 5px 20px #00000059;
+  border-radius: 0.5rem;
+  opacity: 1;
+  color: var(--gray-dark);
+}
+
+.moldingCard a {
+  color: var(--white);
+}
+
+.moldingCard a:hover {
+  opacity: 1;
+  color: #baa4c2;
+}
+
+.moldingCard-second {
+  background: transparent linear-gradient(220deg, #ead1d5 0%, #f1dff8 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 5px 5px 20px #00000059;
+  border-radius: 10px;
+  opacity: 1;
+  box-shadow: 5px 5px 20px #00000059;
+  border-radius: 0.5rem;
+  opacity: 1;
+  color: var(--dark);
+}
+
+/* Style ปุ่ม Menu Molding */
+
+.molding-btn {
+  background: #820B98 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 10px #00000029;
+  border-radius: 20px;
+  opacity: 1;
+  border: none;
+  color: white;
+}
+
+.molding-btn:hover {
+  background: #730E85 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 10px #00000029;
+  border-radius: 20px;
+  opacity: 1;
+  color: white;
+}
+
+.molding-btn:not(:disabled):not(.disabled):active {
+  background: #670c77 0% 0% no-repeat padding-box;
+  box-shadow: 3px 3px 10px #00000029;
+  border-radius: 20px;
+  opacity: 1;
+  color: white;
+}
+
+.statusbox {
+  border-radius: 5px;
+  opacity: 1;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+
+.color-run {
+  color: #ffffff;
+  background: var(--success) 0% 0% no-repeat padding-box;
+  /*border-radius: 5px;*/
+  /*opacity: 1;*/
+  /*padding-top: .25rem;*/
+  /*padding-bottom: .25rem;*/
+}
+
+.color-noplan {
+  color: #ffffff;
+  background: var(--gray) 0% 0% no-repeat padding-box;
+  /*border-radius: 5px;*/
+  /*opacity: 1;*/
+  /*padding-top: .25rem;*/
+  /*padding-bottom: .25rem;*/
+}
+
+.color-downtime {
+  color: #ffffff;
+  background: var(--orange) 0% 0% no-repeat padding-box;
+  /*border-radius: 5px;*/
+  /*opacity: 1;*/
+  /*padding-top: .25rem;*/
+  /*padding-bottom: .25rem;*/
+}
+
+.color-mcdowntime {
+  color: #ffffff;
+  background: var(--red) 0% 0% no-repeat padding-box;
+  /*border-radius: 5px;*/
+  /*opacity: 1;*/
+  /*padding-top: .25rem;*/
+  /*padding-bottom: .25rem;*/
+}
+
+.grindingStatus {
+  background: transparent linear-gradient(243deg, #2F50BE 0%, #6341A7 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 4px 4px 20px #00000059;
+  border-radius: .5rem;
+  opacity: 1;
+  color: white;
+  border-style: none;
+}
+
+.moldingStatus {
+  background: transparent linear-gradient(220deg, #efe3eb 0%, #e2d5e7 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 4px 4px 20px #00000059;
+  border-radius: .5rem;
+  opacity: 1;
+  color: var(--gray-dark);
+  border-style: none;
+  /*font-size: 1.25rem;*/
+}
+
+.grindingStatus:hover {
+  background: transparent linear-gradient(243deg, #2F50BE 0%, #432187 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 4px 4px 20px #00000059;
+  border-radius: .5rem;
+  opacity: 1;
+  color: white;
+  border-style: none;
+}
+
+.moldingStatus:hover {
+  background: transparent linear-gradient(220deg, #d2b2c7 0%, #baa4c2 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 4px 4px 20px #00000059;
+  border-radius: .5rem;
+  opacity: 1;
+  color: white;
+  border-style: none;
+}
+
+.grindingTable thead {
+  background: transparent linear-gradient(243deg, #2F50BE 0%, #6341A7 100%) 0% 0% no-repeat padding-box;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+.grindingTable-light thead {
+  background: transparent linear-gradient(243deg, #fbf5ff 0%, #ddd1ff 100%) 0% 0% no-repeat padding-box;
+  color: var(--dark);
+  position: sticky;
+  top: 0;
+}
+
+.moldingTable thead {
+  background: transparent linear-gradient(220deg, #efe3eb 0%, #e2d5e7 100%) 0% 0% no-repeat padding-box;
+  color: var(--gray-dark);
+  position: sticky;
+  top: 0;
+}
+
+.moldingTable-light thead {
+  background: transparent linear-gradient(243deg, #e1dfe3 0%, #d3cfe0 100%) 0% 0% no-repeat padding-box;
+  color: var(--dark);
+  position: sticky;
+  top: 0;
+}
+
+.grindingTable tbody {
+  background: #E4E8F8;
+  color: var(--dark);
+}
+
+.grindingTable-light tbody {
+  background: #E4E8F8;
+  color: var(--dark);
+}
+
+.moldingTable tbody {
+  background: #E4E8F8;
+  color: var(--dark);
+}
+
+.moldingTable-light tbody {
+  background: #E4E8F8;
+  color: var(--dark);
+}
+
+.grindingTable {
+  border-radius: .25rem!important;
+  border-radius: .25rem!important;
+  box-shadow: 4px 4px 20px #00000059;
+  margin-bottom: 1rem;
+}
+
+.grindingTable-light {
+  border-radius: .25rem!important;
+  border-radius: .25rem!important;
+  box-shadow: 4px 4px 20px #00000059;
+  margin-bottom: 1rem;
+}
+
+.moldingTable {
+  border-radius: .25rem!important;
+  border-radius: .25rem!important;
+  box-shadow: 5px 4px 20px #00000059;
+  margin-bottom: 1rem;
+}
+
+.moldingTable-light {
+  border-radius: .25rem!important;
+  border-radius: .25rem!important;
+  box-shadow: 5px 4px 20px #00000059;
+  margin-bottom: 1rem;
+}
+
+/* ขนาดช่องตาราง */
+
+.productiontable tbody td {
+  height: 70px;
+  vertical-align: middle;
+}
+
+tr.color-run {
+  color: #000000;
+  background: #43e48d 0% 0% no-repeat padding-box;
+}
+
+.table-hover tbody tr:hover.color-run {
+  color: var(--dark);
+  background: #4aae78 0% 0% no-repeat padding-box;
+}
+
+.databox {
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+  padding-right: .25rem;
+  padding-left: .25rem;
+  border-radius: .25rem;
+  background: #f1f1f1;
+  color: #000000;
+  text-align: center;
+  font-weight: bold;
+  margin-top: .25rem;
+  margin-bottom: 1rem;
+  box-shadow: 4px 4px 20px #00000059;
+}
+
+.statuslamp {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 20px #00000059;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.modal-header {
+  background-color: transparent linear-gradient(243deg, #2F50BE 0%, #6341A7 100%) 0% 0% no-repeat padding-box;
+}
+
+.modal-header {
+  background: transparent linear-gradient(243deg, #2F50BE 0%, #6341A7 100%) 0% 0% no-repeat padding-box;
+  color: #f1f1f1;
+}
+

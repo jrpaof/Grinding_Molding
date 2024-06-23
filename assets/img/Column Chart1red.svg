@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="252.736" height="122" viewBox="0 0 252.736 122">
+  <g id="Column_Chart1" data-name="Column Chart1" transform="translate(-4946.632 -771)">
+    <g id="Chart">
+      <g id="Data">
+        <rect id="Rectangle_133" data-name="Rectangle 133" width="13.263" height="18.889" rx="5" transform="translate(4947 854.111)" fill="#f8bdbd"/>
+        <rect id="Rectangle_134" data-name="Rectangle 134" width="13.263" height="39.667" rx="5" transform="translate(4973.526 833.333)" fill="#f8bdbd"/>
+        <rect id="Rectangle_135" data-name="Rectangle 135" width="13.263" height="102" rx="5" transform="translate(5000.053 771)" fill="#f8bdbd"/>
+        <rect id="Rectangle_136" data-name="Rectangle 136" width="13.263" height="45.333" rx="5" transform="translate(5026.579 827.667)" fill="#f8bdbd"/>
+        <rect id="Rectangle_137" data-name="Rectangle 137" width="13.263" height="66.111" rx="5" transform="translate(5053.105 806.889)" fill="#f8bdbd"/>
+        <rect id="Rectangle_138" data-name="Rectangle 138" width="13.263" height="39.667" rx="5" transform="translate(5079.631 833.333)" fill="#f8bdbd"/>
+        <rect id="Rectangle_139" data-name="Rectangle 139" width="13.263" height="28.333" rx="5" transform="translate(5106.158 844.667)" fill="#f8bdbd"/>
+        <rect id="Rectangle_140" data-name="Rectangle 140" width="13.263" height="51" rx="5" transform="translate(5132.684 822)" fill="#f8bdbd"/>
+        <rect id="Rectangle_141" data-name="Rectangle 141" width="13.263" height="39.667" rx="5" transform="translate(5159.211 833.333)" fill="#f8bdbd"/>
+        <path id="Path_662" data-name="Path 662" d="M5,0H8.263a5,5,0,0,1,5,5V51.667a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" transform="translate(5185.736 816.333)" fill="red"/>
+      </g>
+    </g>
+    <g id="X_Axis" data-name="X Axis" transform="translate(6.632 12)">
+      <text id="_14" data-name="14" transform="translate(4947 878)" fill="#fff" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-6.738" y="0">14</tspan></text>
+      <text id="_15" data-name="15" transform="translate(4973.526 878)" fill="#fff" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-6.738" y="0">15</tspan></text>
+      <text id="_16" data-name="16" transform="translate(5000.053 878)" fill="#fff" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-6.738" y="0">16</tspan></text>
+      <text id="_17" data-name="17" transform="translate(5026.579 878)" fill="#fff" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-6.738" y="0">17</tspan></text>
+      <text id="_18" data-name="18" transform="translate(5053.105 878)" fill="#fff" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-6.738" y="0">18</tspan></text>
+      <text id="_19" data-name="19" transform="translate(5079.631 878)" fill="#fff" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-6.738" y="0">19</tspan></text>
+      <text id="_20" data-name="20" transform="translate(5106.158 878)" fill="#fff" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-6.738" y="0">20</tspan></text>
+      <text id="_21" data-name="21" transform="translate(5132.684 878)" fill="#fff" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-6.738" y="0">21</tspan></text>
+      <text id="_22" data-name="22" transform="translate(5159.211 878)" fill="#fff" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-6.738" y="0">22</tspan></text>
+      <text id="_23" data-name="23" transform="translate(5185.736 878)" fill="#fff" font-size="12" font-family="Roboto-Regular, Roboto"><tspan x="-6.738" y="0">23</tspan></text>
+    </g>
+  </g>
+</svg>

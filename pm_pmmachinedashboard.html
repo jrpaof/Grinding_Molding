@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GRINDING&amp;MOLDING</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/AnimatePageChange.css">
+    <link rel="stylesheet" href="assets/css/glowAnimation.css">
+    <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/moduleSelect.css">
+    <link rel="stylesheet" href="assets/css/ScrollBar.css">
+    <link rel="stylesheet" href="assets/css/SidePanel.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="sidehide sidepanel rounded shadow" id="sidepanel"><button class="btn btn-link float-right p-0 closebtn" type="button" onclick="closeNav()"><i class="fa fa-close"></i></button>
+            <h6 class="m-3">Navigation</h6>
+            <div class="container"><a class="mb-1" href="moduleSelect.html"><i class="fa fa-home mr-2"></i>Home</a><span class="font-weight-bold text-black-50">----------&nbsp; Grinding&nbsp; -----------</span><a class="mb-1" href="dash_grinding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_grindingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_grindingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_grindingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; Molding&nbsp; ----------</span><a class="mb-1" href="dash_molding.html"><i class="fa fa-list-alt mr-2"></i>Dashboard</a><a class="mb-1" href="dash_moldingallstatus.html"><i class="fa fa-list-alt mr-2"></i>Machine Status</a><a class="mb-1" href="production_moldingselect.html"><i class="fa fa-forward mr-2"></i>Production</a><a class="mb-1" href="production_moldingsetting.html"><i class="fa fa-wrench mr-2"></i>Setting</a><span class="font-weight-bold text-black-50">----------&nbsp; PM ----------</span><a class="mb-1" href="pm_pmmachinedashboard.html"><i class="fa fa-shield mr-2"></i>PM Machine</a><a class="mb-1" href="pm_moldingdashboard.html"><i class="fa fa-shield mr-2"></i>PM Molding</a></div>
+            <div class="container"><span class="text-black-50">User :</span><a class="mb-1"><i class="fa fa-sign-out mr-2"></i>Logout</a></div>
+        </div>
+        <div id="content-wrapper">
+            <nav class="navbar navbar-light navbar-expand-md pageHeader">
+                <div class="container-fluid"><button class="btn btn-primary float-left m-0 openbtn" type="button" onclick="openNav()"><i class="fa fa-navicon text-light"></i></button><a class="navbar-brand font-weight-bold text-light" href="#">PM Machine Dashboard&nbsp;</a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span>
+                    <div class="d-flex align-items-center"><a class="btn btn-primary mx-2" role="button" href="pm_menu.html"><i class="fa fa-backward text-light"></i></a><span class="font-weight-bold text-light" style="font-size: 1.25rem;"></span></div>
+                </div>
+            </nav>
+            <div id="content" class="animate-in">
+                <div class="container-fluid py-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="carousel slide" data-ride="carousel" id="carousel-1">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="card text-center mb-3 shadow grindingCard">
+                                            <div class="card-body">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-11">
+                                                        <h4>PM Machine</h4>
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-2"><em>Machine:</em><input class="form-control-sm form-control mb-2" type="text" value="Grinding" readonly="" style="text-align: center;"></div>
+                                                            <div class="col-2 col-xl-2"><em>Department:</em><input class="form-control-sm form-control mb-2" type="text" value="-" readonly="" style="text-align: center;"></div>
+                                                            <div class="col-2"><em>Responsible:</em><input class="form-control-sm form-control mb-2" type="text" value="name" readonly="" style="text-align: center;"></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="table-responsive" style="font-size: .75rem;height: 450px;">
+                                                                    <table class="table table-hover table-bordered table-sm">
+                                                                        <tbody>
+                                                                            <tr class="table-primary">
+                                                                                <td rowspan="3">Machine No.</td>
+                                                                                <td colspan="24">Year&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="table-secondary" colspan="2">Jan</td>
+                                                                                <td class="table-secondary" colspan="2">Feb</td>
+                                                                                <td class="table-secondary" colspan="2">Mar</td>
+                                                                                <td class="table-secondary" colspan="2">Apr</td>
+                                                                                <td class="table-secondary" colspan="2">May</td>
+                                                                                <td class="table-secondary" colspan="2">Jun</td>
+                                                                                <td class="table-secondary" colspan="2">July</td>
+                                                                                <td class="table-secondary" colspan="2">Aug</td>
+                                                                                <td class="table-secondary" colspan="2">Sep</td>
+                                                                                <td class="table-secondary" colspan="2">Oct</td>
+                                                                                <td class="table-secondary" colspan="2">Nov</td>
+                                                                                <td class="table-secondary" colspan="2">Dec</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark" role="button" href="">
+                                                                                <td><a class="text-primary" href="pm_pmgrindinginput.html">Grinding 1</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmgrindinginput.html">Grinding 2</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmgrindinginput.html">Grinding 3</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmgrindinginput.html">Grinding 4</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmgrindinginput.html">Grinding 5</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                            <tr class="table-secondary">
+                                                                                <td>Total</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div style="height: 378px;"><canvas data-bss-chart="{&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;nov&quot;,&quot;Dec&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Plan&quot;,&quot;backgroundColor&quot;:&quot;#dfb64e&quot;,&quot;borderColor&quot;:&quot;#4e73df&quot;,&quot;data&quot;:[&quot;4500&quot;,&quot;5300&quot;,&quot;6250&quot;,&quot;7800&quot;,&quot;9800&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;]},{&quot;label&quot;:&quot;Actual&quot;,&quot;backgroundColor&quot;:&quot;#4edfab&quot;,&quot;borderColor&quot;:&quot;#4e73df&quot;,&quot;data&quot;:[&quot;4500&quot;,&quot;5300&quot;,&quot;6250&quot;,&quot;7800&quot;,&quot;9800&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:true,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;,&quot;fontColor&quot;:&quot;#e4e8f8&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;bold&quot;,&quot;display&quot;:true,&quot;text&quot;:&quot;Chart Total Plan vs Actual&quot;,&quot;fontColor&quot;:&quot;#e4e8f8&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#e4e8f8&quot;,&quot;fontStyle&quot;:&quot;normal&quot;}}],&quot;yAxes&quot;:[{&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#e4e8f8&quot;,&quot;fontStyle&quot;:&quot;normal&quot;}}]}}}"></canvas></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="card text-center mb-3 shadow moldingCard">
+                                            <div class="card-body">
+                                                <div class="row justify-content-center">
+                                                    <div class="col-11">
+                                                        <h4 class="text-primary">PM Machine</h4>
+                                                        <div class="row justify-content-center">
+                                                            <div class="col-2"><em>Machine:</em><input class="form-control-sm form-control mb-2" type="text" value="Molding" readonly="" style="text-align: center;"></div>
+                                                            <div class="col-2 col-xl-2"><em>Department:</em><input class="form-control-sm form-control mb-2" type="text" value="-" readonly="" style="text-align: center;"></div>
+                                                            <div class="col-2"><em>Responsible:</em><input class="form-control-sm form-control mb-2" type="text" value="name" readonly="" style="text-align: center;"></div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div class="table-responsive" style="font-size: .75rem;height: 450px;">
+                                                                    <table class="table table-hover table-bordered table-sm">
+                                                                        <tbody>
+                                                                            <tr class="table-primary">
+                                                                                <td rowspan="3">Machine No.</td>
+                                                                                <td colspan="24">Year&nbsp;</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="table-secondary" colspan="2">Jan</td>
+                                                                                <td class="table-secondary" colspan="2">Feb</td>
+                                                                                <td class="table-secondary" colspan="2">Mar</td>
+                                                                                <td class="table-secondary" colspan="2">Apr</td>
+                                                                                <td class="table-secondary" colspan="2">May</td>
+                                                                                <td class="table-secondary" colspan="2">Jun</td>
+                                                                                <td class="table-secondary" colspan="2">July</td>
+                                                                                <td class="table-secondary" colspan="2">Aug</td>
+                                                                                <td class="table-secondary" colspan="2">Sep</td>
+                                                                                <td class="table-secondary" colspan="2">Oct</td>
+                                                                                <td class="table-secondary" colspan="2">Nov</td>
+                                                                                <td class="table-secondary" colspan="2">Dec</td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                                <td class="table-warning">Plan</td>
+                                                                                <td class="table-info">Actual</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark" role="button" href="">
+                                                                                <td><a class="text-primary" href="pm_pmmoldinginput.html">Molding 1</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmmoldinginput.html">Molding 2</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmmoldinginput.html">Molding 3</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmmoldinginput.html">Molding 4</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmmoldinginput.html">Molding 5</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmmoldinginput.html">Molding 6</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmmoldinginput.html">Molding 7</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmmoldinginput.html">Molding 8</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmmoldinginput.html">Molding 9</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                            <tr class="table-light text-dark">
+                                                                                <td><a class="text-primary" href="pm_pmmoldinginput.html">Molding 10</a></td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                        <tfoot>
+                                                                            <tr class="table-secondary">
+                                                                                <td>Total</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                                <td>0</td>
+                                                                            </tr>
+                                                                        </tfoot>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col">
+                                                                <div style="height: 378px;"><canvas data-bss-chart="{&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;January&quot;,&quot;February&quot;,&quot;March&quot;,&quot;April&quot;,&quot;May&quot;,&quot;June&quot;,&quot;July&quot;,&quot;Aug&quot;,&quot;Sep&quot;,&quot;Oct&quot;,&quot;nov&quot;,&quot;Dec&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Plan&quot;,&quot;backgroundColor&quot;:&quot;#dfb64e&quot;,&quot;borderColor&quot;:&quot;#4e73df&quot;,&quot;data&quot;:[&quot;4500&quot;,&quot;5300&quot;,&quot;6250&quot;,&quot;7800&quot;,&quot;9800&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;]},{&quot;label&quot;:&quot;Actual&quot;,&quot;backgroundColor&quot;:&quot;#4edfab&quot;,&quot;borderColor&quot;:&quot;#4e73df&quot;,&quot;data&quot;:[&quot;4500&quot;,&quot;5300&quot;,&quot;6250&quot;,&quot;7800&quot;,&quot;9800&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;,&quot;15000&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:true,&quot;labels&quot;:{&quot;fontStyle&quot;:&quot;normal&quot;,&quot;fontColor&quot;:&quot;#444444&quot;}},&quot;title&quot;:{&quot;fontStyle&quot;:&quot;bold&quot;,&quot;display&quot;:true,&quot;text&quot;:&quot;Chart Total Plan vs Actual&quot;,&quot;fontColor&quot;:&quot;#444444&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#444444&quot;,&quot;fontStyle&quot;:&quot;normal&quot;}}],&quot;yAxes&quot;:[{&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#444444&quot;,&quot;fontStyle&quot;:&quot;normal&quot;}}]}}}"></canvas></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div><a class="carousel-control-prev" href="#carousel-1" role="button" data-slide="prev" style="width: 3%;"><span class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carousel-1" role="button" data-slide="next" style="width: 3%;"><span class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-1" data-slide-to="1"></li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="assets/js/reportselect.js"></script>
+    <script src="assets/js/SidePanel.js"></script>
+    <script src="assets/js/tablescroll.js"></script>
+</body>
+
+</html>
